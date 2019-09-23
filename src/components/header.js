@@ -9,6 +9,11 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <img
+      style={{ height: "60px", width: "60px" }}
+      src={require("../data/social-icons/hamburger.png")}
+      alt="hamburgerMenu"
+    />
     <div
       style={{
         margin: `0 auto`,
