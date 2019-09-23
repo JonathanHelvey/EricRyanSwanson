@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -12,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Style = { margin: `3rem auto`, maxWidth: 600 }
+// const Style = { margin: `3rem auto`, maxWidth: 600 }
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div style={Style}>
+      <div>
         <main>{children}</main>
         <footer></footer>
       </div>
