@@ -1,39 +1,37 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "../components/header.css"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <img
-      style={{ height: "60px", width: "60px" }}
-      src={require("../data/social-icons/hamburger.png")}
-      alt="hamburgerMenu"
-    />
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: "100%",
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <div>
+    <header className="headerIMG">
+      <div>
+        <div className="hamdiv">
+          <div>
+            <button className="hamButton">
+              <img
+                className="hamburger"
+                src={require("../data/social-icons/whitehamburger.jpg")}
+                alt="hamburgerMenu"
+              />
+            </button>
+          </div>
+        </div>
+        <div>
+          <h1>
+            <Link to="/" className="siteTitle">
+              {siteTitle}
+            </Link>
+          </h1>
+        </div>{" "}
+        <img
+          className="swanlogo"
+          src={require("../data/assets/swanlogo2.png")}
+        />
+      </div>
+    </header>
+  </div>
 )
 
 Header.propTypes = {
