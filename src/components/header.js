@@ -5,6 +5,7 @@ import "../components/header.css"
 
 const Header = ({ siteTitle }) => (
   <div>
+    <div style={{ height: "1rem", backgroundColor: "black" }}></div>
     <header className="headerIMG">
       <div>
         <div className="hamdiv">
@@ -28,6 +29,7 @@ const Header = ({ siteTitle }) => (
         <img
           className="swanlogo"
           src={require("../data/assets/swanlogo2.png")}
+          alt="swanlogo"
         />
       </div>
     </header>
