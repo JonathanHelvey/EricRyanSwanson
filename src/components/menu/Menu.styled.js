@@ -7,6 +7,7 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   background: black;
   height: 100vh;
+  width: 80vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
@@ -21,7 +22,8 @@ export const StyledMenu = styled.nav`
   }
 
   a {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
@@ -37,6 +39,11 @@ export const StyledMenu = styled.nav`
 
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
+      text-decoration: underline white;
+      opacity: 2;
+      -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      transform: scale(1.3);
     }
   }
 `
