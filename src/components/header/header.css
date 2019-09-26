@@ -1,0 +1,52 @@
+.headerIMG {
+  /* background: black; */
+  margin-bottom: 0.5rem;
+  align-items: center;
+  background-image: url("../../data/images/EricBanner1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40rem;
+}
+
+.hamdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerIMG {
+    height: 10rem;
+  }
+}
+
+.siteTitle {
+  position: fixed;
+  margin-top: 15rem;
+  margin-left: 3rem;
+  color: white;
+  text-decoration: none;
+  font-size: 46px;
+}
+
+.swanlogo {
+  position: fixed;
+  height: 150px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .siteTitle {
+    margin-left: 1rem;
+    margin-top: 3.4rem;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .swanlogo {
+    height: 25px;
+    width: 50px;
+    margin-left: 3rem;
+  }
+}
