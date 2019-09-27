@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
                 alt="swanlogo"
               />
             </Link>
-          </h1>{" "}
+          </h1>
         </div>
       </header>
     </div>
