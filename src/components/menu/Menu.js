@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from "react"
 import { bool } from "prop-types"
 import { StyledMenu } from "./Menu.styled"

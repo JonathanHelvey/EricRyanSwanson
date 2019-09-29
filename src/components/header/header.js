@@ -1,3 +1,5 @@
+/* eslint-disable react/no-array-index-key */
+// eslint-disable-next-line react/no-array-index-key
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useRef } from "react"
@@ -23,7 +25,7 @@ const Header = ({ siteTitle }) => {
         <div>
           <h1>
             <Link to="/" className="siteTitle">
-              {siteTitle}{" "}
+              {siteTitle}
               <img
                 className="swanlogo"
                 src={require("../../data/assets/swanlogo2.png")}

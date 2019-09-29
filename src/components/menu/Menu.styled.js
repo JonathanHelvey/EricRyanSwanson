@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 // Menu.styled.js
 import styled from "styled-components"
 
