@@ -3,7 +3,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState, useRef } from "react"
-import { useOnClickOutside } from "../hooks"
+import { useOnClickOutside } from "../hooks/ClickOutside"
 import "../../components/header/header.css"
 import BurgerMenu from "../../components/burger/Burger"
 import Menu from "../../components/menu/Menu"
