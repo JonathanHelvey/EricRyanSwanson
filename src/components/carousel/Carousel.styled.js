@@ -2,5 +2,8 @@
 import styled from "styled-components"
 
 export const StyledCarousel = styled.div`
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px;
 `
