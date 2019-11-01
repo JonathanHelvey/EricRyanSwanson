@@ -3,7 +3,7 @@ import React from "react"
 
 import { StyledCarousel } from "../carousel/Carousel.styled.js"
 
-const Carousel = ({ siteTitle }) => {
+const Carousel = () => {
   return (
     <StyledCarousel>
       <div>

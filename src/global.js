@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
   a {
-    color: ${({ theme }) => theme.primaryHover};
+    color: ${({ theme }) => theme.primaryLight};
     text-decoration: none;
   }
   `

@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => {
               </div>
               <h1>
                 <Link to="/" className="siteTitle">
-                  Eric {siteTitle}
+                  {siteTitle}
                 </Link>
               </h1>
             </div>
