@@ -2,6 +2,7 @@
 // eslint-disable-next-line react/no-array-index-key
 
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 import React, { useState, useRef } from "react"
 import { useOnClickOutside } from "../hooks/ClickOutside"
 import { ThemeProvider } from "styled-components"
@@ -27,6 +28,11 @@ const Header = ({ siteTitle }) => {
                 <BurgerMenu open={open} setOpen={setOpen} />
                 <Menu open={open} setOpen={setOpen} />
               </div>
+              <h1>
+                <Link to="/" className="siteTitle">
+                  Eric {siteTitle}
+                </Link>
+              </h1>
             </div>
           </header>
         </>

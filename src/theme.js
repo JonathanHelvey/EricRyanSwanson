@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 // theme.js
 export const theme = {
   primaryDark: "#0B0B0C",

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
@@ -37,7 +38,5 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
-    z-index: 2;
-    text-decoration: none
   }
   `
