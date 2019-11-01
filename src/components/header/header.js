@@ -7,6 +7,7 @@ import { useOnClickOutside } from "../hooks/ClickOutside"
 import "../../components/header/header.css"
 import BurgerMenu from "../../components/burger/Burger"
 import Menu from "../../components/menu/Menu"
+import Carousel from "../carousel/Carousel"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = useState(false)
@@ -18,6 +19,7 @@ const Header = ({ siteTitle }) => {
       <header className="headerIMG">
         <div className="hamdiv">
           <div ref={node}>
+            <Carousel />
             <BurgerMenu open={open} setOpen={setOpen} />
             <Menu open={open} setOpen={setOpen} />
           </div>
