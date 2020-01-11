@@ -1,6 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-// eslint-disable-next-line react/no-array-index-key
-
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import React, { useState, useRef } from 'react';
@@ -18,9 +15,9 @@ const Header = ({ siteTitle }) => {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <div>
-      {/* <ThemeProvider theme={theme}> */}
+      <ThemeProvider theme={theme}>
         <>
-          {/* <GlobalStyles /> */}
+          <GlobalStyles />
           <header>
             <div>
               <div ref={node}>
@@ -36,7 +33,7 @@ const Header = ({ siteTitle }) => {
             </div>
           </header>
         </>
-      {/* </ThemeProvider> */}
+      </ThemeProvider>
     </div>
   );
 };

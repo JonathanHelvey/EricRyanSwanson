@@ -1,8 +1,10 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable react/no-array-index-key */
 // theme.js
 export const theme = {
-  primaryDark: "#0B0B0C",
-  primaryLight: "#EFFFFA",
-  primaryHover: "#343078",
-  mobile: "576px",
+  primaryDark: '#29252c',
+  primaryLightDark: '#333146',
+  primaryLight: '#36485e',
+  primaryHover: '#9effa9',
+  mobile: '576px',
 }

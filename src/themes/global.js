@@ -1,5 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable react/no-array-index-key */
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -39,4 +40,4 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.primaryLight};
     text-decoration: none;
   }
-  `
+  `;
