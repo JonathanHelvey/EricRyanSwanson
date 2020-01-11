@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import { ThemeProvider } from "styled-components"
-import { GlobalStyles } from "../global"
-import { theme } from "../theme"
+import { GlobalStyles } from "../themes/global"
+import { theme } from "../themes/theme"
 
 const IndexPage = () => (
   <Layout>
