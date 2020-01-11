@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+import Carousel from '../Carousel';
+
+const Hero = ({ siteTitle }) => (
   <div>
-    Hero
+    <Carousel />
   </div>
 );
 
-export default Header;
+export default Hero;

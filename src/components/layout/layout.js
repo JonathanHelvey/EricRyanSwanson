@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from '../../themes/global';
 import { theme } from '../../themes/theme';
 import Navigation from '../Navigation/Navigation';
+import Hero from '../Hero/Hero';
 
 
 const Layout = ({ children }) => {
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
         <>
           <GlobalStyles />
           <Navigation siteTitle={data.site.siteMetadata.title} />
+          <Hero />
           <div>
             <main>{children}</main>
             <footer />
