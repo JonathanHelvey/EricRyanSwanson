@@ -9,8 +9,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/header/header"
-import "./layout.scss"
+import Header from "../header/header"
 
 const Style = { margin: `3rem auto`, maxWidth: 600 }
 

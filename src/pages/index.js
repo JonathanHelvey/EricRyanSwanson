@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 import { ThemeProvider } from "styled-components"
 import { GlobalStyles } from "../global"
