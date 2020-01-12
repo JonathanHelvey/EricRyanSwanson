@@ -2,6 +2,11 @@
 
 import styled from 'styled-components';
 
+export const NavigationWrapper = styled.div`
+  width: 100vw;
+  margin: 5vh;
+`;
+
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;

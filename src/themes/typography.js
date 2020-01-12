@@ -22,6 +22,6 @@ const typography = new Typography({
     // "sans-serif",
   ],
   bodyFontFamily: ['Georgia', 'serif'],
-})
+});
 
-export default typography
+export default typography;

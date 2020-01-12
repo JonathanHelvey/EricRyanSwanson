@@ -1,10 +1,13 @@
 import React from 'react';
 
 import Carousel from '../Carousel';
+import { HeroWrapper } from './Hero.styled';
 
 const Hero = ({ siteTitle }) => (
   <div>
-    <Carousel />
+    <HeroWrapper>
+      <Carousel />
+    </HeroWrapper>
   </div>
 );
 

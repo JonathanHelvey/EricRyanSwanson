@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import PropTypes, { bool, func } from 'prop-types';
+import AppBar from '@material-ui/core/AppBar';
 import { useOnClickOutside } from '../hooks/ClickOutside';
-import { StyledMenu, StyledBurger } from './Navigation.styled';
+import { StyledMenu, StyledBurger, NavigationWrapper } from './Navigation.styled';
 
 
 const Burger = ({ open, setOpen }) => (
@@ -29,10 +30,11 @@ const Header = ({ siteTitle }) => {
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
   return (
-    <div ref={node}>
+    <NavigationWrapper ref={node}>
       <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
-    </div>
+      <h1>{siteTitle}</h1>
+    </NavigationWrapper>
   );
 };
 
