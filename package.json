@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.8.3",
     "@material-ui/styles": "^4.8.2",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.20",

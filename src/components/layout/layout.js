@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeProvider } from 'styled-components';
+import { MuiThemeProvider, StylesProvider } from "@material-ui/core/styles";
 import { GlobalStyles } from '../../themes/global';
 import { theme } from '../../themes/theme';
 import Navigation from '../Navigation/Navigation';
@@ -21,17 +22,21 @@ const Layout = ({ children }) => {
   `);
   return (
     <div>
-      <ThemeProvider theme={theme}>
-        <>
-          <GlobalStyles />
-          <Navigation siteTitle={data.site.siteMetadata.title} />
-          <Hero />
-          <div>
-            <main>{children}</main>
-            <footer />
-          </div>
-        </>
-      </ThemeProvider>
+      <StylesProvider injectFirst>
+        <MuiThemeProvider theme={theme}>
+          <ThemeProvider theme={theme}>
+            <>
+              <GlobalStyles />
+              <Navigation siteTitle={data.site.siteMetadata.title} />
+              <Hero />
+              <div>
+                <main>{children}</main>
+                <footer />
+              </div>
+            </>
+          </ThemeProvider>
+        </MuiThemeProvider>
+      </StylesProvider>
     </div>
   );
 };
