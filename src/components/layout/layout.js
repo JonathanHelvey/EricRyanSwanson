@@ -29,10 +29,8 @@ const Layout = ({ children }) => {
               <GlobalStyles />
               <Navigation siteTitle={data.site.siteMetadata.title} />
               <Hero />
-              <div>
-                <main>{children}</main>
-                <footer />
-              </div>
+              <main>{children}</main>
+              <footer />
             </>
           </ThemeProvider>
         </MuiThemeProvider>
