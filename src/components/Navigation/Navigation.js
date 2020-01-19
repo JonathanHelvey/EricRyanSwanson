@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
-import PropTypes, { bool, func } from 'prop-types';
-import AppBar from '@material-ui/core/AppBar';
+import { bool, func } from 'prop-types';
 import { useOnClickOutside } from '../hooks/ClickOutside';
 import { StyledMenu, StyledBurger, NavigationWrapper } from './Navigation.styled';
 
@@ -25,7 +24,7 @@ const Menu = ({ open }) => (
   </StyledMenu>
 );
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [open, setOpen] = useState(false);
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
@@ -33,13 +32,8 @@ const Header = ({ siteTitle }) => {
     <NavigationWrapper ref={node}>
       <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
-      <h1>{siteTitle}</h1>
     </NavigationWrapper>
   );
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {

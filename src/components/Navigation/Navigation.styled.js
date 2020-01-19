@@ -13,7 +13,7 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   background: black;
   height: 100vh;
-  width: 80vh;
+  width: 100vw;
   text-align: left;
   padding: 2rem;
   position: absolute;
@@ -28,13 +28,11 @@ export const StyledMenu = styled.nav`
   }
 
   a {
-    font-size: 1rem;
     text-align: center;
-    text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: white;
+    color: ${({ theme }) => theme.primaryLightDark};
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -45,11 +43,7 @@ export const StyledMenu = styled.nav`
 
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
-      text-decoration: underline white;
-      opacity: 2;
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.3);
+      text-decoration: underline ${({ theme }) => theme.primaryHover};
     }
   }
 `;
@@ -62,7 +56,7 @@ export const StyledBurger = styled.button`
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -76,7 +70,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: white;
+    background: ${({ theme }) => theme.primaryLightDark};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -13,17 +13,17 @@ export const theme = createMuiTheme({
   status: {
     danger: 'orange',
   },
-  primaryDark: '#29252c',
-  primaryLightDark: '#333146',
-  primaryLight: '#36485e',
-  primaryHover: '#9effa9',
+  primaryDark: '#5d5c61',
+  primaryLightDark: '#557a95',
+  primaryLight: '#fbfbfb',
+  primaryHover: '#b1a296',
   mobile: '576px',
 });
 
 export const Section = styled.div`
-display: flex;
-align-items: flex-start;
-justify-content: center;
-margin: 20vw;
-height: 20vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20vw;
+  height: 20vh;
 `;

@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
       }
     }
   `);
+  console.log('data---->', data);
   return (
     <div>
       <StylesProvider injectFirst>
@@ -27,8 +28,8 @@ const Layout = ({ children }) => {
           <ThemeProvider theme={theme}>
             <>
               <GlobalStyles />
+              <Hero siteTitle={data.site.siteMetadata.title} />
               <Navigation siteTitle={data.site.siteMetadata.title} />
-              <Hero />
               <main>{children}</main>
               <footer />
             </>
