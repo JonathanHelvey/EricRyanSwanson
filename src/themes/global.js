@@ -33,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   div {
     text-align: center;
+    /* background-color: ${({ theme }) => theme.primaryDark}; */
   }
   small {
     display: block;

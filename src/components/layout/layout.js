@@ -7,8 +7,6 @@ import { MuiThemeProvider, StylesProvider } from '@material-ui/core/styles';
 import { GlobalStyles } from '../../themes/global';
 import { theme } from '../../themes/theme';
 import Navigation from '../Navigation/Navigation';
-import Hero from '../Hero/Hero';
-
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,7 +26,6 @@ const Layout = ({ children }) => {
           <ThemeProvider theme={theme}>
             <>
               <GlobalStyles />
-              <Hero siteTitle={data.site.siteMetadata.title} />
               <Navigation siteTitle={data.site.siteMetadata.title} />
               <main>{children}</main>
               <footer />

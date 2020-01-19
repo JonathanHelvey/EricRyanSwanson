@@ -4,7 +4,8 @@ import styled from 'styled-components';
 
 export const NavigationWrapper = styled.div`
   width: 100vw;
-  margin: 5vh;
+  margin: 1vh;
+  background-color: ${({ theme }) => theme.primaryLightDark};
 `;
 
 export const StyledMenu = styled.nav`

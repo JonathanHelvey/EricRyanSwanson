@@ -1,30 +1,27 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image/withIEPolyfill';
+// import { useStaticQuery, graphql } from 'gatsby';
 
 import { HeroWrapper, Header1 } from './Hero.styled';
+import Carousel from '../Carousel';
 
 const Hero = ({ siteTitle }) => {
-  const data = useStaticQuery(graphql`
-  query {
-  ericBanner1: file(relativePath: { eq: "EricBanner1.jpg"}) {
-    childImageSharp {
-        fixed (width: 2200, height: 600) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`);
+console.log('--->: siteTitle', siteTitle)
+
+//   const data = useStaticQuery(graphql`
+//   query {
+//   ericBanner1: file(relativePath: { eq: "EricBanner1.jpg"}) {
+//     childImageSharp {
+//         fixed (width: 2200, height: 600) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// `);
   return (
     <HeroWrapper>
-      <Header1 style={{ color: 'black' }}>{siteTitle}</Header1>
-      <Img
-        fixed={data.ericBanner1.childImageSharp.fixed}
-        objectFit="cover"
-        objectPosition="50% 50%"
-        alt="This is a picture of my face."
-      />
+      <Carousel />
+      <Header1 style={{ color: 'black' }}>{siteTitle}Eric Ryan Swanson</Header1>
     </HeroWrapper>
   );
 };
