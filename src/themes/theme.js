@@ -23,7 +23,8 @@ export const theme = createMuiTheme({
 export const Section = styled.div`
   display: flex;
   align-items: flex-start;
+  text-align: left;
   justify-content: center;
-  margin: 20vw;
-  height: 20vh;
+  margin: 4vw;
+  background-color: ${({ theme }) => theme.primary};
 `;

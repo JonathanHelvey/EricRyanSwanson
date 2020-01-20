@@ -8,35 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
-  *, *::after, *::before {
-    box-sizing: border-box;
-  }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: ${({ theme }) => theme.primaryLight};
-    color: ${({ theme }) => theme.primaryLight};
-    text-rendering: optimizeLegibility;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-  
-  }
-  img {
-    border-radius: 5px;
-    height: auto;
-    width:90rem;
-  }
   div {
     text-align: center;
-    /* background-color: ${({ theme }) => theme.primaryDark}; */
-  }
-  small {
-    display: block;
   }
   a {
     color: ${({ theme }) => theme.primaryLight};
