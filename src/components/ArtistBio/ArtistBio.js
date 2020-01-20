@@ -22,8 +22,8 @@ const useStyles = makeStyles({
 const ArtistBio = () => {
   const classes = useStyles();
   const newsData = useStaticQuery(graphql`
-  query newsQuery {
-    allMarkdownRemark (sort: {fields: frontmatter___priority}) {
+  query {
+    newsQuery: allMarkdownRemark (sort: {fields: frontmatter___priority}) {
       nodes {
         id
         frontmatter {
@@ -37,6 +37,7 @@ const ArtistBio = () => {
     }
   }
 `);
+
   return (
     <Section>
       <Grid container spacing={3}>
@@ -55,20 +56,20 @@ const ArtistBio = () => {
         <Grid item xs={6}>
           <Box>
             <Wrapper>
-          <ScrollDiv>
-              <h2>News Feed</h2>
-              {newsData.allMarkdownRemark.nodes.map(({ frontmatter, id, html }) => (
-                <div key={`key=${id}`}>
-                  <Card className={classes.card}>
-                    <CardContent className={classes.title}>
-                      <h4>{frontmatter.title}</h4>
-                      <h6>{frontmatter.date}</h6>
-                      <div dangerouslySetInnerHTML={{ __html: html }} />
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-          </ScrollDiv>
+              <ScrollDiv>
+                <h2>News Feed</h2>
+                {newsData.newsQuery.nodes.map(({ frontmatter, id, html }) => (
+                  <div key={`key=${id}`}>
+                    <Card className={classes.card}>
+                      <CardContent className={classes.title}>
+                        <h4>{frontmatter.title}</h4>
+                        <h6>{frontmatter.date}</h6>
+                        <div dangerouslySetInnerHTML={{ __html: html }} />
+                      </CardContent>
+                    </Card>
+                  </div>
+                ))}
+              </ScrollDiv>
             </Wrapper>
           </Box>
         </Grid>

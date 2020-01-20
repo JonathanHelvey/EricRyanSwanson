@@ -16,6 +16,7 @@ export const theme = createMuiTheme({
   primaryDark: '#000000',
   primaryLightDark: '#557a95',
   primaryLight: '#fbfbfb',
+  primaryPurple: '#550a46',
   primaryHover: '#b1a296',
   mobile: '576px',
 });
@@ -26,5 +27,5 @@ export const Section = styled.div`
   text-align: left;
   justify-content: center;
   margin: 4vw;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.primaryLight};
 `;
