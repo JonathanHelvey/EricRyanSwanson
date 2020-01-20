@@ -14,7 +14,7 @@ export const theme = createMuiTheme({
     danger: 'orange',
   },
   primaryDark: '#000000',
-  primaryLightDark: '#557a95',
+  primaryLightDark: '#7395ae',
   primaryLight: '#fbfbfb',
   primaryPurple: '#550a46',
   primaryHover: '#b1a296',
