@@ -29,10 +29,12 @@ const Header = () => {
   const node = useRef();
   useOnClickOutside(node, () => setOpen(false));
   return (
-    <NavigationWrapper ref={node}>
-      <Burger open={open} setOpen={setOpen} />
-      <Menu open={open} setOpen={setOpen} />
-    </NavigationWrapper>
+    <div>
+      <NavigationWrapper ref={node}>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </NavigationWrapper>
+    </div>
   );
 };
 
