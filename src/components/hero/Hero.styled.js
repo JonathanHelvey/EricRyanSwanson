@@ -3,6 +3,7 @@ import image from '../../data/images/Eric-164.jpg';
 
 export const HeroWrapper = styled.div`
   background: url(${image});
+  margin-top: -40px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
