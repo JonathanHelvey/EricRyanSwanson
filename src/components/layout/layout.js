@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { ThemeProvider } from 'styled-components';
-import { MuiThemeProvider, StylesProvider } from '@material-ui/core/styles';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import { GlobalStyles } from '../../themes/global';
 import { theme } from '../../themes/theme';
 
@@ -21,22 +21,19 @@ const Layout = ({ children }) => {
       }
     }
   `);
-  console.log('data---->', data);
   return (
-    <div>
-      <StylesProvider injectFirst>
-        <MuiThemeProvider theme={theme}>
-          <ThemeProvider theme={theme}>
-            <>
-              <GlobalStyles />
-              <Navigation siteTitle={data.site.siteMetadata.title} />
-              <main>{children}</main>
-              <Footer siteTitle={data.site.siteMetadata.title} />
-            </>
-          </ThemeProvider>
-        </MuiThemeProvider>
-      </StylesProvider>
-    </div>
+    <>
+      <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme} injectFirst>
+          <>
+            <GlobalStyles />
+            <Navigation siteTitle={data.site.siteMetadata.title} />
+            <main>{children}</main>
+            <Footer siteTitle={data.site.siteMetadata.title} />
+          </>
+        </ThemeProvider>
+      </MuiThemeProvider>
+    </>
   );
 };
 

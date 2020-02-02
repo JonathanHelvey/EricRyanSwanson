@@ -25,7 +25,18 @@ export const Section1 = styled.div`
   display: flex;
   justify-content: center;
   padding: 6vw;
+  height: 50vh:
+  width: auto;
   background-color: ${({ theme }) => theme.primaryHover};
+`;
+
+export const Section2 = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 6vw;
+  padding: 6vw;
+  height: 50vh:
+  background-color: ${({ theme }) => theme.primaryLightDark};
 `;
 
 export const Header1 = styled.h1`
