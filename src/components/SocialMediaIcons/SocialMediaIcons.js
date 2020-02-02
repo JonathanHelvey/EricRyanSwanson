@@ -1,17 +1,16 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 
-import { StyledSocialLogos } from './SocialMediaIcons.styled';
+import { StyledSocialLogoImage, StyledLogoWrapper } from './SocialMediaIcons.styled';
 
 const SocialMediaIcons = () => (
-  <StyledSocialLogos>
+  <StyledLogoWrapper>
     <a
       href="https://www.linkedin.com/in/jonathanhelvey/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        className="social-logos-img"
+      <StyledSocialLogoImage
         src={require('../../data/social-icons/linkedin-logo.png')}
         alt="social-sites"
       />
@@ -21,8 +20,7 @@ const SocialMediaIcons = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        className="social-logos-img"
+      <StyledSocialLogoImage
         src={require('../../data/social-icons/Facebook.png')}
         alt="social-sites"
       />
@@ -32,8 +30,7 @@ const SocialMediaIcons = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        className="social-logos-img"
+      <StyledSocialLogoImage
         src={require('../../data/social-icons/twitter.png')}
         alt="social-sites"
       />
@@ -43,13 +40,12 @@ const SocialMediaIcons = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        className="social-logos-img"
+      <StyledSocialLogoImage
         src={require('../../data/social-icons/medium.png')}
         alt="social-sites"
       />
     </a>
-  </StyledSocialLogos>
+  </StyledLogoWrapper>
 );
 
 

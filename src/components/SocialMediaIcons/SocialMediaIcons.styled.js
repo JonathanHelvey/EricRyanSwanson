@@ -2,15 +2,20 @@
 
 import styled from 'styled-components';
 
-export const StyledSocialLogos = styled.div`
-  width: 5vw;
-  height: 5vh;
+export const StyledSocialLogoImage = styled.img`
+  width: auto;
+  height: 4vh;
   margin: 10px;
+  :hover{
+    opacity: 2;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
 `;
 
-// export const StyledLogoWrapper = styled.div`
-//   flex-direction: row;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
+export const StyledLogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;

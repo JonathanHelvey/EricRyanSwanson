@@ -2,18 +2,18 @@ import styled from 'styled-components';
 import Grid from '@material-ui/core/Grid';
 
 export const StyledGrid = styled(Grid)`
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
     max-width: 100%;
     flex-basis: 100%;
   };
 `;
 
 export const GridWrapper = styled(Grid)`
-  margin: 4vh;
+  margin: 8vh;
 `;
 
 export const ImageWrapper = styled.div`   
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
     display: none;    
   };
 `;

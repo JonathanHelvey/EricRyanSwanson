@@ -14,7 +14,7 @@ const Burger = ({ open, setOpen }) => (
 
 const Menu = ({ open }) => (
   <StyledMenu open={open}>
-    <a href="/">Artist Bio</a>
+    <a href="/#ArtistBio">Artist Bio</a>
     <a href="/">Videos</a>
     <a href="/">Photographs</a>
     <a href="/">Resume</a>

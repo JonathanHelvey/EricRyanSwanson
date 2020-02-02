@@ -27,11 +27,6 @@ export const Section1 = styled.div`
   background-color: ${({ theme }) => theme.primaryHover};
 `;
 
-export const SectionFooter = styled.div`
-  height: 20vh;
-  background-color: ${({ theme }) => theme.primaryDark};
-`;
-
 export const Header1 = styled.h1`
   font-weight: bolder:
   font-size: 24px;

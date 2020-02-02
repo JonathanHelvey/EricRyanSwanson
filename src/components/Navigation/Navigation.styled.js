@@ -92,5 +92,6 @@ export const StyledBurger = styled.button`
   }
   @media (max-width: 768px) {
     top: 0;
+    margin-top: 2vh;
   }
 `;

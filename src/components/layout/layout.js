@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
               <GlobalStyles />
               <Navigation siteTitle={data.site.siteMetadata.title} />
               <main>{children}</main>
-              <Footer />
+              <Footer siteTitle={data.site.siteMetadata.title} />
             </>
           </ThemeProvider>
         </MuiThemeProvider>

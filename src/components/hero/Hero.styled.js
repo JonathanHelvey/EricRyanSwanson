@@ -18,7 +18,7 @@ export const HeroWrapper = styled.div`
 
 export const SiteHeaderTitle = styled.h1`
   margin: 30px;
-  margin-top:50vh;
+  margin-top: 50vh;
   font-size: 4vh;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
