@@ -1,31 +1,39 @@
+/* eslint-disable no-shadow */
 /* eslint-disable import/prefer-default-export */
 
 // theme.js
 import styled from 'styled-components';
 import { createMuiTheme } from '@material-ui/core/styles';
-import { purple, green } from '@material-ui/core/colors/red';
 
 export const theme = createMuiTheme({
-  palette: {
-    primary: purple,
-    secondary: green,
-  },
-  status: {
-    danger: 'orange',
-  },
-  primaryDark: '#000000',
-  primaryLightDark: '#7395ae',
+  primaryDark: '#212629',
+  primaryLightDark: '#798797',
   primaryLight: '#fbfbfb',
   primaryPurple: '#550a46',
+  primaryGreen: '#819C8D',
   primaryHover: '#b1a296',
-  mobile: '576px',
+  mobile: {
+    xs: '576px',
+    sm: '766px',
+    md: '1020px',
+    lg: '1200px',
+    xl: '1500px',
+  },
 });
 
-export const Section = styled.div`
+export const Section1 = styled.div`
   display: flex;
-  align-items: flex-start;
-  text-align: left;
   justify-content: center;
-  margin: 4vw;
-  background-color: ${({ theme }) => theme.primaryLight};
+  background-color: ${({ theme }) => theme.primaryHover};
+`;
+
+export const Section2 = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.primaryLightDark};
+`;
+
+export const Header1 = styled.h1`
+  font-weight: bolder:
+  font-size: 24px;
 `;

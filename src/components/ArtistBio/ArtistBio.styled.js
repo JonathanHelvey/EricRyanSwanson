@@ -1,13 +1,27 @@
 import styled from 'styled-components';
 
-export const NavigationWrapper = styled.div`
-  width: 100vw;
-  margin: 1vh;
-  background-color: ${({ theme }) => theme.primaryLightDark};
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+
+export const StyledGrid = styled(Grid)`
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    max-width: 100%;
+    flex-basis: 100%;
+  };
+`;
+
+export const GridWrapper = styled(Grid)`
+  margin: 4vh;
+`;
+
+export const ImageWrapper = styled.div`   
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    display: none;    
+  };
 `;
 
 export const Box = styled.div`
-  background-color: ${({ theme }) => theme.primaryLightDark};
+  background-color: ${({ theme }) => theme.primaryDark};
   margin-top: 1vh;
   padding: 5% 2vw; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
@@ -19,7 +33,7 @@ export const Box = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.primaryLightDark};
+  background-color: ${({ theme }) => theme.primaryGreen};
   margin-top: 1vh;
   padding: 5% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
@@ -33,5 +47,13 @@ export const Wrapper = styled.div`
 export const ScrollDiv = styled.div`
   overflow-y: scroll; 
   overflow-x:hidden;
-  max-height: 50vh; d
+  max-height: 50vh;
+`;
+
+export const NewsHeadlineStyle = styled.h4`
+  color: ${({ theme }) => theme.primaryHover};
+`;
+
+export const NewsDateStyle = styled.h6`
+  color: ${({ theme }) => theme.primaryLightDark};
 `;

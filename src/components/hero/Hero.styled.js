@@ -3,23 +3,31 @@ import image from '../../data/images/Eric-164.jpg';
 
 export const HeroWrapper = styled.div`
   background: url(${image});
-  margin-top: -40px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -10px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 80vh;
+  height: 100vh;
   width: auto;
 `;
 
-export const SiteHeaderWrapper = styled.h1`
-  display: flex;
-  justify-content: flex-start;
-`;
 export const SiteHeaderTitle = styled.h1`
-  font-size: 20px;
-  margin: 20px;
-  margin-top:30vh;
+  margin: 30px;
+  margin-top:50vh;
+  font-size: 4vh;
+  color: ${({ theme }) => theme.primaryLight};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 12px;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
+    font-size: 2vh;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    display: none;
+  };
 `;

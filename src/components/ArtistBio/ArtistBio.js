@@ -1,17 +1,25 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-
+import Img from 'gatsby-image';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
-import { Box, Wrapper, ScrollDiv } from './ArtistBio.styled';
-import { Section } from '../../themes/theme';
+import {
+  Box,
+  Wrapper,
+  ScrollDiv,
+  StyledGrid,
+  ImageWrapper,
+  NewsHeadlineStyle,
+  NewsDateStyle,
+  GridWrapper,
+} from './ArtistBio.styled';
+import { Section1, Header1 } from '../../themes/theme';
 
 const useStyles = makeStyles({
   card: {
-    minWidth: 100,
+    minWidth: 50,
     margin: 10,
   },
   title: {
@@ -21,7 +29,7 @@ const useStyles = makeStyles({
 
 const ArtistBio = () => {
   const classes = useStyles();
-  const newsData = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
   query {
     newsQuery: allMarkdownRemark (sort: {fields: frontmatter___priority}) {
       nodes {
@@ -35,14 +43,21 @@ const ArtistBio = () => {
         html
       }
     }
+    swanLogo: file(relativePath: { eq: "swanlogo2.png" }) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `);
 
   return (
-    <Section>
-      <Grid container spacing={3}>
-        <Grid item xs={6}>
-          <h1>Artist Bio</h1>
+    <Section1>
+      <GridWrapper container spacing={3}>
+        <StyledGrid item xs={6}>
+          <Header1>Artist Bio</Header1>
           <p>
             I feel it is my job as an actor to discover a character’s soul and portray it externally with great ease and normality.
             As an actor, I’m most attracted to characters with complicated psyches and darker desires.
@@ -52,18 +67,24 @@ const ArtistBio = () => {
             I have worked as an architectural metal re finisher, barista, standardized patient, segway tour guide, manager of operations, admin, dog walker and personal assistant.
             **I was born and raised in Chicago, IL and currently reside in Manhattan.
           </p>
-        </Grid>
-        <Grid item xs={6}>
+          <ImageWrapper>
+            <Img
+              fixed={data.swanLogo.childImageSharp.fixed}
+              alt="Swan Logo"
+            />
+          </ImageWrapper>
+        </StyledGrid>
+        <StyledGrid item xs={6}>
+          <h2>Latest News</h2>
           <Box>
             <Wrapper>
               <ScrollDiv>
-                <h2>News Feed</h2>
-                {newsData.newsQuery.nodes.map(({ frontmatter, id, html }) => (
+                {data.newsQuery.nodes.map(({ frontmatter, id, html }) => (
                   <div key={`key=${id}`}>
                     <Card className={classes.card}>
                       <CardContent className={classes.title}>
-                        <h4>{frontmatter.title}</h4>
-                        <h6>{frontmatter.date}</h6>
+                        <NewsHeadlineStyle>{frontmatter.title}</NewsHeadlineStyle>
+                        <NewsDateStyle>{frontmatter.date}</NewsDateStyle>
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                       </CardContent>
                     </Card>
@@ -72,9 +93,9 @@ const ArtistBio = () => {
               </ScrollDiv>
             </Wrapper>
           </Box>
-        </Grid>
-      </Grid>
-    </Section>
+        </StyledGrid>
+      </GridWrapper>
+    </Section1>
   );
 };
 
