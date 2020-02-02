@@ -8,11 +8,7 @@ export const StyledGrid = styled(Grid)`
   };
 `;
 
-export const GridWrapper = styled(Grid)`
-  margin: 8vh;
-`;
-
-export const ImageWrapper = styled.div`   
+export const ImageWrapper = styled.div`  
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     display: none;    
   };

@@ -1,7 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { bool, func } from 'prop-types';
+import { Link } from 'gatsby';
+
 import { useOnClickOutside } from '../hooks/ClickOutside';
 import { StyledMenu, StyledBurger, NavigationWrapper } from './Navigation.styled';
+import { Header1 } from '../../themes/theme';
 
 
 const Burger = ({ open, setOpen }) => (
@@ -12,15 +15,16 @@ const Burger = ({ open, setOpen }) => (
   </StyledBurger>
 );
 
-const Menu = ({ open }) => (
+const Menu = ({ open, setOpen }) => (
   <StyledMenu open={open}>
-    <a href="/#ArtistBio">Artist Bio</a>
-    <a href="/">Videos</a>
-    <a href="/">Photographs</a>
-    <a href="/">Resume</a>
-    <a href="/">Reviews</a>
-    <a href="/">Links</a>
-    <a href="/">Contact</a>
+    <Link to="/#" onClick={() => setOpen(!open)}><Header1>Eric Ryan Swanson</Header1></Link>
+    <Link to="/#ArtistBio" onClick={() => setOpen(!open)}>Artist Bio</Link>
+    <Link to="/photographs">Videos</Link>
+    <Link to="/photographs">Photographs</Link>
+    <Link to="/">Resume</Link>
+    <Link to="/reviews">Reviews</Link>
+    <Link to="/">Links</Link>
+    <Link to="/">Contact</Link>
   </StyledMenu>
 );
 

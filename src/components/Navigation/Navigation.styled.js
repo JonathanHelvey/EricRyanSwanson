@@ -12,12 +12,12 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: black;
+  background: ${({ theme }) => theme.primaryDark};
   height: 100vh;
-  width: 100vw;
+  width: 25vw;
   text-align: left;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
@@ -27,12 +27,17 @@ export const StyledMenu = styled.nav`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
   }
+  h1, h2 {
+    color: ${({ theme }) => theme.primaryLight};
+    text-align: center;
+    padding-bottom: 3vh;
+  }
 
   a {
     text-align: center;
     padding: 2rem 0;
     font-weight: bold;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.3rem;
     color: ${({ theme }) => theme.primaryLightDark};
     text-decoration: none;
     transition: color 0.3s linear;
@@ -44,13 +49,12 @@ export const StyledMenu = styled.nav`
 
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
-      text-decoration: underline ${({ theme }) => theme.primaryHover};
     }
   }
 `;
 
 export const StyledBurger = styled.button`
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 2rem;
   display: flex;
@@ -92,6 +96,5 @@ export const StyledBurger = styled.button`
   }
   @media (max-width: 768px) {
     top: 0;
-    margin-top: 2vh;
   }
 `;

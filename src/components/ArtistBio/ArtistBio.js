@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Grid from '@material-ui/core/Grid';
 
 import {
   Box,
@@ -13,7 +14,6 @@ import {
   ImageWrapper,
   NewsHeadlineStyle,
   NewsDateStyle,
-  GridWrapper,
 } from './ArtistBio.styled';
 import { Section1, Header1, Header2 } from '../../themes/theme';
 
@@ -55,7 +55,7 @@ const ArtistBio = () => {
 
   return (
     <Section1>
-      <GridWrapper container spacing={3}>
+      <Grid container spacing={3}>
         <StyledGrid item xs={6}>
           <Header1 id="ArtistBio">Artist Bio</Header1>
           <p>
@@ -98,7 +98,7 @@ const ArtistBio = () => {
             </Wrapper>
           </Box>
         </StyledGrid>
-      </GridWrapper>
+      </Grid>
     </Section1>
   );
 };

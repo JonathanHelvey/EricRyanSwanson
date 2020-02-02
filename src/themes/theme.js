@@ -24,6 +24,7 @@ export const theme = createMuiTheme({
 export const Section1 = styled.div`
   display: flex;
   justify-content: center;
+  padding: 6vw;
   background-color: ${({ theme }) => theme.primaryHover};
 `;
 

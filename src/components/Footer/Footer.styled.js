@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 export const SectionFooter = styled.div`
-  height: 25vh;
+  height: 20vh;
   margin-bottom: -10px;
   background-color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
