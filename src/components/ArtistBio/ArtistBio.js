@@ -15,7 +15,7 @@ import {
   NewsDateStyle,
   GridWrapper,
 } from './ArtistBio.styled';
-import { Section1, Header1 } from '../../themes/theme';
+import { Section1, Header1, Header2 } from '../../themes/theme';
 
 const useStyles = makeStyles({
   card: {
@@ -45,7 +45,7 @@ const ArtistBio = () => {
     }
     swanLogo: file(relativePath: { eq: "swanlogo2.png" }) {
       childImageSharp {
-        fixed {
+        fixed (width: 300, height: 300) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -75,7 +75,7 @@ const ArtistBio = () => {
           </ImageWrapper>
         </StyledGrid>
         <StyledGrid item xs={6}>
-          <h2>Latest News</h2>
+          <Header2>Latest News</Header2>
           <Box>
             <Wrapper>
               <ScrollDiv>

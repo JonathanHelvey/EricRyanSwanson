@@ -2,9 +2,9 @@ import Typography from 'typography';
 import altonTheme from 'typography-theme-alton';
 
 altonTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
-  h1: {
-    fontFamily: ['Montserrat', 'sans-serif'].join(','),
-  },
+  // h1: {
+  //   fontFamily: ['Lobster'].join(','),
+  // },
   'h1, h2,h3': {
     marginBottom: rhythm(1 / 2),
     marginTop: rhythm(2),
@@ -13,6 +13,7 @@ altonTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
 
 const typography = new Typography(altonTheme);
 altonTheme.baseFontSize = '24px'; // was 20px.
+altonTheme.headerFontFamily = 'lobster';
 
 
 // const typography = new Typography({

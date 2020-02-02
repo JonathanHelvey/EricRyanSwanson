@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-
 import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
 
 export const StyledGrid = styled(Grid)`
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
@@ -52,8 +50,16 @@ export const ScrollDiv = styled.div`
 
 export const NewsHeadlineStyle = styled.h4`
   color: ${({ theme }) => theme.primaryHover};
+  text-align: center;
 `;
 
 export const NewsDateStyle = styled.h6`
   color: ${({ theme }) => theme.primaryLightDark};
+  text-align: center;
+`;
+
+export const StyledSocialLogos = styled.div`
+  width: 5vw;
+  height: 5vh;
+  margin: 10px;
 `;
