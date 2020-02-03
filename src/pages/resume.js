@@ -4,7 +4,7 @@ import React from 'react';
 import ResumeFile from '../components/ResumeFile';
 
 import SEO from '../components/SEO';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 
 const ResumePage = () => (
   <Layout>

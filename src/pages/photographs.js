@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PhotoGallery from '../components/PhotoGallery';
-import Layout from '../components/Layout';
+import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO';
 
 const photographs = () => (
