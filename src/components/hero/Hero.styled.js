@@ -5,6 +5,7 @@ export const HeroWrapper = styled.div`
   background: url(${image});
   display: flex;
   justify-content: flex-start;
+  background-attachment: fixed;
   margin-top: -10px;
   background-position: center;
   background-size: cover;

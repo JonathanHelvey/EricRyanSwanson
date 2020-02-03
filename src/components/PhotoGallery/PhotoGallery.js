@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 import Grid from '@material-ui/core/Grid';
 import { Section1, Section2, Header1 } from '../../themes/theme';
-import { SectionHeader, StyledGrid } from './PhotoGallery.styled';
+import { SectionHeader, StyledGrid, StyledImg } from './PhotoGallery.styled';
 
 const Photographs = () => {
   const data = useStaticQuery(graphql`
@@ -51,6 +51,20 @@ const Photographs = () => {
         }
       }
     }
+    ericPhoto7: file(relativePath: { eq: "11Headshot2014.JPG" }) {
+      childImageSharp {
+        fluid (maxWidth: 300, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ericPhoto8: file(relativePath: { eq: "7Headshot2014.JPG" }) {
+      childImageSharp {
+        fluid (maxWidth: 300, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `);
   console.log('data', data);
@@ -67,7 +81,7 @@ const Photographs = () => {
       <Section2>
         <Grid container spacing={4}>
           <StyledGrid item xs={4}>
-            <Img
+            <StyledImg
               fluid={data.ericPhoto1.childImageSharp.fluid}
             />
           </StyledGrid>
@@ -94,6 +108,16 @@ const Photographs = () => {
           <StyledGrid item xs={4}>
             <Img
               fluid={data.ericPhoto6.childImageSharp.fluid}
+            />
+          </StyledGrid>
+          <StyledGrid item xs={4}>
+            <Img
+              fluid={data.ericPhoto7.childImageSharp.fluid}
+            />
+          </StyledGrid>
+          <StyledGrid item xs={4}>
+            <Img
+              fluid={data.ericPhoto8.childImageSharp.fluid}
             />
           </StyledGrid>
         </Grid>
