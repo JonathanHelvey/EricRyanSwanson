@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 
 import {
-  Box,
+  NewsBox,
   Wrapper,
   ScrollDiv,
   StyledGrid,
@@ -82,7 +82,7 @@ const ArtistBio = () => {
         </StyledGrid>
         <StyledGrid item xs={4}>
           <Header2>Latest News</Header2>
-          <Box>
+          <NewsBox>
             <Wrapper>
               <ScrollDiv>
                 {data.newsQuery.nodes.map(({ frontmatter, id, html }) => (
@@ -98,7 +98,7 @@ const ArtistBio = () => {
                 ))}
               </ScrollDiv>
             </Wrapper>
-          </Box>
+          </NewsBox>
         </StyledGrid>
       </Grid>
     </Section1>

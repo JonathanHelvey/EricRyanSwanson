@@ -14,9 +14,10 @@ export const ImageWrapper = styled.div`
   };
 `;
 
-export const Box = styled.div`
+export const NewsBox = styled.div`
   background-color: ${({ theme }) => theme.primaryDark};
-  margin-top: 1vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   padding: 5% 2vw; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
   -webkit-transform: skewY(-5deg);

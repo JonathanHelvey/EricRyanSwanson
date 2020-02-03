@@ -24,8 +24,9 @@ export const theme = createMuiTheme({
 export const Section1 = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 8vw;
-  height: 50vh:
+  height: 90vh:
   width: auto;
   background-color: ${({ theme }) => theme.primaryHover};
 `;
@@ -33,21 +34,37 @@ export const Section1 = styled.div`
 export const Section2 = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 8vw;
-  height: 50vh;
+  height: auto;
   width: auto;
   background-color: ${({ theme }) => theme.primaryLightDark};
 `;
 
 export const Header1 = styled.h1`
-  font-weight: bolder:
-  font-size: 36px;
+  font-weight: bolder;
+  font-size: 60px;
   color: ${({ theme }) => theme.primaryDark};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 32px;
+  }
 `;
 
 export const Header2 = styled.h2`
-  font-weight: bolder:
-  font-size: 24px;
+  font-weight: bolder;
+  font-size: 30px;
   color: ${({ theme }) => theme.primaryDark};
   text-align: center;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 26px;
+  }
+`;
+
+export const Header3 = styled.h1`
+  font-weight: bolder;
+  font-size: 24px;
+  color: ${({ theme }) => theme.primaryDark};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 20px;
+  }
 `;

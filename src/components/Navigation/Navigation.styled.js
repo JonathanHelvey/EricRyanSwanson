@@ -22,8 +22,8 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   z-index: 8;
 
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    width: 100vw;
   }
   h1, h2 {
     color: ${({ theme }) => theme.primaryLight};
@@ -40,9 +40,10 @@ export const StyledMenu = styled.nav`
     text-decoration: none;
     transition: color 0.3s linear;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 1.5rem;
+    @media (max-width: ${({ theme }) => theme.mobile.md}) {
+      font-size: 1rem;
       text-align: center;
+      padding: 1rem 0;
     }
 
     &:hover {
@@ -73,7 +74,7 @@ export const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ theme }) => theme.primaryLightDark};
+    background: ${({ theme }) => theme.primaryLight};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -92,7 +93,8 @@ export const StyledBurger = styled.button`
       transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
     top: 0;
+    margin-top: 4vh;
   }
 `;
