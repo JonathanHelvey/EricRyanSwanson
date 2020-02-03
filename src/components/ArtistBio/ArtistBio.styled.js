@@ -40,8 +40,14 @@ export const Wrapper = styled.div`
 
 export const ScrollDiv = styled.div`
   overflow-y: scroll; 
-  overflow-x:hidden;
+  overflow-x: hidden;
   max-height: 50vh;
+`;
+
+export const NewsCard = styled.h4`
+  color: ${({ theme }) => theme.primaryLight};
+  text-align: center;
+  font-weight: bold;
 `;
 
 export const NewsHeadlineStyle = styled.h4`

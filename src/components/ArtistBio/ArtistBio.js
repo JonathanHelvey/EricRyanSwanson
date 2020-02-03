@@ -14,13 +14,15 @@ import {
   ImageWrapper,
   NewsHeadlineStyle,
   NewsDateStyle,
+  NewsCard,
 } from './ArtistBio.styled';
-import { Section1, Header1, Header2 } from '../../themes/theme';
+import { Section1, Header1, Header2, theme } from '../../themes/theme';
 
 const useStyles = makeStyles({
   card: {
     minWidth: 50,
     margin: 10,
+    backgroundColor: theme.primaryLight,
   },
   title: {
     fontSize: 14,
@@ -56,7 +58,7 @@ const ArtistBio = () => {
   return (
     <Section1>
       <Grid container spacing={3}>
-        <StyledGrid item xs={6}>
+        <StyledGrid item xs={8}>
           <Header1 id="ArtistBio">Artist Bio</Header1>
           <p>
             I feel it is my job as an
@@ -78,13 +80,13 @@ const ArtistBio = () => {
             />
           </ImageWrapper>
         </StyledGrid>
-        <StyledGrid item xs={6}>
+        <StyledGrid item xs={4}>
           <Header2>Latest News</Header2>
           <Box>
             <Wrapper>
               <ScrollDiv>
                 {data.newsQuery.nodes.map(({ frontmatter, id, html }) => (
-                  <div key={`key=${id}`}>
+                  <NewsCard key={`key=${id}`}>
                     <Card className={classes.card}>
                       <CardContent className={classes.title}>
                         <NewsHeadlineStyle>{frontmatter.title}</NewsHeadlineStyle>
@@ -92,7 +94,7 @@ const ArtistBio = () => {
                         <div dangerouslySetInnerHTML={{ __html: html }} />
                       </CardContent>
                     </Card>
-                  </div>
+                  </NewsCard>
                 ))}
               </ScrollDiv>
             </Wrapper>
