@@ -1,10 +1,19 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Grid from '@material-ui/core/Grid';
-import SocialMediaIcons from '../SocialMediaIcons';
-import { SectionFooter, Wrapper, SiteTitle } from './Footer.styled';
 
+import SocialMediaIcons from '../SocialMediaIcons';
+import { SectionFooter, Wrapper, SiteTitle, CopyWrightDiv } from './Footer.styled';
+
+const Links = [
+  <Link to="/#ArtistBio">Artist Bio</Link>,
+  <Link to="/photographs">Photographs</Link>,
+  <Link to="/">Resume</Link>,
+  <Link to="/reviews">Reviews</Link>,
+  <Link to="/">Links</Link>,
+  <Link to="/">Contact</Link>,
+];
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -20,10 +29,10 @@ const Footer = () => {
 `);
   return (
     <SectionFooter>
-      <Grid container spacing={6}>
+      <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <Wrapper>
-            <SiteTitle>2020 - Eric Ryan Swanson</SiteTitle>
+            <SiteTitle>{Links.map((link) => <ul>{link}</ul>)}</SiteTitle>
           </Wrapper>
         </Grid>
         <Grid item xs={12} sm={4}>
@@ -38,6 +47,7 @@ const Footer = () => {
           </Wrapper>
         </Grid>
       </Grid>
+      <CopyWrightDiv>@Copywright Eric Ryan Swanson-2020</CopyWrightDiv>
     </SectionFooter>
   );
 };

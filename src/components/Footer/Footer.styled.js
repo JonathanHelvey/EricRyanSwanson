@@ -3,11 +3,11 @@
 import styled from 'styled-components';
 
 export const SectionFooter = styled.div`
-  height: 20vh;
+  height: 30vh;
   margin-bottom: -10px;
   background-color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
-    height: 50vh; 
+    height: auto; 
   };
 `;
 
@@ -20,7 +20,23 @@ export const Wrapper = styled.div`
   };
 `;
 
-export const SiteTitle = styled.p`
+export const SiteTitle = styled.div`
   color: ${({ theme }) => theme.primaryLight};
   margin-left: 10vw;
+  font-size: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    display: none; 
+  };
+`;
+
+export const CopyWrightDiv = styled.div`
+  color: ${({ theme }) => theme.primaryLight};
+  font-size: 12px; 
+  margin-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
 `;
