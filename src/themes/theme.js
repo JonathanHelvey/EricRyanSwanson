@@ -24,8 +24,8 @@ export const theme = createMuiTheme({
 export const Section1 = styled.div`
   display: flex;
   justify-content: center;
-  padding: 6vw;
-  height: 80vh:
+  padding: 8vw;
+  height: 50vh:
   width: auto;
   background-color: ${({ theme }) => theme.primaryHover};
 `;
@@ -33,8 +33,8 @@ export const Section1 = styled.div`
 export const Section2 = styled.div`
   display: flex;
   justify-content: center;
-  padding: 6vw;
-  height: 120vh;
+  padding: 8vw;
+  height: 50vh;
   width: auto;
   background-color: ${({ theme }) => theme.primaryLightDark};
 `;
