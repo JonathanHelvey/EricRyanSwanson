@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import resume from '../../data/assets/EricResume.pdf';
+import ericrResume from '../../data/assets/EricResume.pdf';
 
 import { Header1 } from '../../themes/theme';
-import { ResumeWrapper, SectionHeader, buttonWrapper } from './Resume.styled';
+import { ResumeWrapper, SectionHeader, buttonWrapper } from './ResumeFile.styled';
 
 const Resume = () => (
   <>
@@ -20,7 +20,7 @@ const Resume = () => (
       </buttonWrapper>
     </SectionHeader>
     <ResumeWrapper>
-      <object type="application/pdf" data={resume} title="resume">
+      <object type="application/pdf" data={ericrResume} title="resume">
         This browser does not support PDFs.
         <iframe title="Eric-Swanson-Resume" />
       </object>

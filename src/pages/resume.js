@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 
-import Resume from '../components/Resume';
+import ResumeFile from '../components/ResumeFile';
 
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
@@ -9,7 +9,7 @@ import Layout from '../components/Layout';
 const ResumePage = () => (
   <Layout>
     <SEO title="Resume" />
-    <Resume />
+    <ResumeFile />
   </Layout>
 );
 
