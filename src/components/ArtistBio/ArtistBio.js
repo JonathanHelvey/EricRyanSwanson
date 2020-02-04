@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -10,13 +11,18 @@ import {
   NewsBox,
   Wrapper,
   ScrollDiv,
-  StyledGrid,
   ImageWrapper,
   NewsHeadlineStyle,
   NewsDateStyle,
   NewsCard,
 } from './ArtistBio.styled';
-import { Section1, Header1, Header2, theme } from '../../themes/theme';
+import {
+  Section1,
+  Header1,
+  Header2,
+  theme,
+  StyledGrid,
+} from '../../themes/theme';
 
 const useStyles = makeStyles({
   card: {
@@ -33,7 +39,10 @@ const ArtistBio = () => {
   const classes = useStyles();
   const data = useStaticQuery(graphql`
   query {
-    newsQuery: allMarkdownRemark (sort: {fields: frontmatter___priority}) {
+    newsQuery: allMarkdownRemark (
+      sort: {fields: frontmatter___priority} , 
+      filter: {fileAbsolutePath: {regex: "/News/i"}}
+    ) {
       nodes {
         id
         frontmatter {

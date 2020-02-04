@@ -1,18 +1,42 @@
-{
-  "review1": {
+[
+  {
+    "review": 1,
     "title": "The National Herald Says: (Off-Broadway review)",
     "body": "Peter Quince and his band of players, including Nick Bottom played in a perfect comedic frenzy by Eric Ryan Swanson."
   },
-  "review2": {
-    "title": "The National Herald Says: (Off-Broadway review)",
-    "body": "Peter Quince and his band of players, including Nick Bottom played in a perfect comedic frenzy by Eric Ryan Swanson."
+  {
+    "review": 2,
+    "title": "Show Score Says: (Off-Broadway review)",
+    "body": "See it if you want to see a twist on Shakespeare with an amazing performance by Eric Ryan Swanson. Eric Ryan Swanson will definitely be an upcoming star."
   },
-  "review3": {
-    "title": "The National Herald Says: (Off-Broadway review)",
-    "body": "Peter Quince and his band of players, including Nick Bottom played in a perfect comedic frenzy by Eric Ryan Swanson."
+  {
+    "review": 3,
+    "title": "New York City Theatre Guide Says: (Off-Broadway review)",
+    "body": "Meanwhile, her drunk uncle Sir Toby Belch (Kevin Bartini) is playing pranks on her servants, especially the uptight somewhat autistic Malvolio (Eric Ryan Swanson) who delivers an absolute stand-out performance in his neon Reebok yellow socks. Swanson’s dedication to embodying Malvolio is magnetic, entertaining and awkwardly charming."
   },
-  "review4": {
-    "title": "The National Herald Says: (Off-Broadway review)",
-    "body": "Peter Quince and his band of players, including Nick Bottom played in a perfect comedic frenzy by Eric Ryan Swanson."
+  {
+    "review": 4,
+    "title": "Edge Chicago says:",
+    "body": "Although there are elements to admire, including standout performances from sub-plot stars Gary Murphy (Judd Benz) and Eric Ryan Swanson (Tom Benz). Murphy as the elder Judd and Swanson as Tom both log solid performances as the emotionally-charged, idealistic, yet loving parent and child. The tension and bond between the two men feels unforced and genuine, the antithesis of the manufactured existentialism of the primary relationship between Jack and Isaac. (Adrift)"
+  },
+  {
+    "review": 5,
+    "title": "Time Out Chicago says:",
+    "body": "The pair with the less grandiose back story turns out to be the more compelling. A bureaucratic principal and a sarcastic teenager? Commonplace—except that Murphy and Swanson burn up the stage, radiating frustration and hurt with subtle mastery. (Adrift)"
+  },
+  {
+    "review": 6,
+    "title": "Time Out Chicago Speaks Highly of:",
+    "body": "The show is virtually stolen by Tweedledee and Tweedledum, played by Eric Ryan Swanson and Alex Seeley respectively, as they imbue Dee and Dum with enough kinetic energy to keep the lights on at the Apollo. (Alice in Wonderland)"
+  },
+  {
+    "review": 7,
+    "title": "Chicago Theatre Beat says:",
+    "body": "Julia Weed and Eric Ryan Swanson are nasty fun as the victims' spoiled offspring. (Six Degrees of Seperation)"
+  },
+  {
+    "review": 8,
+    "title": "Chicago Tribune",
+    "body": "Fans of the troupe 500 Clown will sense some thematic similarities. Of the six performers only two achieve actual characters, but both are standouts: Eric Ryan Swanson, who brings to mind an adorable if pugnacious rat creature. (Les Enftants Terribles: Prom Night)"
   }
-}
+]

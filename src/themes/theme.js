@@ -4,6 +4,7 @@
 // theme.js
 import styled from 'styled-components';
 import { createMuiTheme } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 export const theme = createMuiTheme({
   primaryDark: '#212629',
@@ -127,4 +128,21 @@ export const Header3 = styled.h1`
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 20px;
   }
+`;
+
+export const Header4 = styled.h1`
+  font-weight: bolder;
+  font-size: 18px;
+  color: ${({ theme }) => theme.primaryDark};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 16px;
+  }
+`;
+
+export const StyledGrid = styled(Grid)`
+  align-self: center;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    max-width: 100%;
+    flex-basis: 100%;
+  };
 `;
