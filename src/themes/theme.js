@@ -61,7 +61,7 @@ export const Section4 = styled.div`
   background-color: ${({ theme }) => theme.primaryGreen};
 `;
 
-export const SectionHeaderRight = styled.div`
+export const SectionHeaderRightPurple = styled.div`
   display: flex;
   padding: 8vw;
   height: 7vh:
@@ -103,6 +103,7 @@ export const SectionHeaderLeftBrown = styled.div`
 export const Header1 = styled.h1`
   font-weight: bolder;
   font-size: 60px;
+  text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
   color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 32px;

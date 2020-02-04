@@ -4,13 +4,13 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 import { Section1, Header1, SectionHeaderCenter } from '../../themes/theme';
-import { FormWrapper } from './ContactForm.styled';
+import { FormWrapper, SectionHeader } from './ContactForm.styled';
 
 const ContactForm = () => (
   <>
-    <SectionHeaderCenter>
+    <SectionHeader>
       <Header1 style={{ textAlign: 'right' }} className="contact-title">Get In Touch!</Header1>
-    </SectionHeaderCenter>
+    </SectionHeader>
     <Section1>
       <FormWrapper>
         <form
@@ -34,7 +34,7 @@ const ContactForm = () => (
             <TextField required id="standard-required" label="Email" />
           </p>
           <p>
-            <TextField id="standard-required" label="Company" />
+            <TextField required id="standard-required" label="Company" />
           </p>
           <p>
             <TextField
