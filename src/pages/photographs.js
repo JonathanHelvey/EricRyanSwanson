@@ -4,11 +4,11 @@ import PhotoGallery from '../components/PhotoGallery';
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/SEO';
 
-const photographs = () => (
+const Photographs = () => (
   <Layout>
     <SEO title="Eric Swanson Photographs" />
     <PhotoGallery />
   </Layout>
 );
 
-export default photographs;
+export default Photographs;
