@@ -9,7 +9,7 @@ export const theme = createMuiTheme({
   primaryDark: '#212629',
   primaryLightDark: '#798797',
   primaryLight: '#fbfbfb',
-  primaryPurple: '#550a46',
+  primaryPurple: '#514F64',
   primaryGreen: '#819C8D',
   primaryHover: '#b1a296',
   mobile: {

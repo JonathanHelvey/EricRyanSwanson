@@ -19,6 +19,7 @@ const Burger = ({ open, setOpen }) => (
 const Menu = ({ open, setOpen }) => (
   <StyledMenu open={open}>
     <Link to="/#" onClick={() => setOpen(!open)}><Header2>Eric Ryan Swanson</Header2></Link>
+    <Link to="/#" onClick={() => setOpen(!open)}>Home</Link>
     <Link to="/#ArtistBio" onClick={() => setOpen(!open)}>Artist Bio</Link>
     <Link to="/photographs">Photographs</Link>
     <Link to="/resume">Resume</Link>

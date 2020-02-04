@@ -36,12 +36,22 @@ const SocialMediaIcons = () => (
       />
     </a>
     <a
-      href="https://medium.com/@jonathanhelvey"
+      href="https://www.imdb.com/name/nm4805518/"
       target="_blank"
       rel="noopener noreferrer"
     >
       <StyledSocialLogoImage
-        src={require('../../data/social-icons/medium.png')}
+        src={require('../../data/social-icons/Imdb.png')}
+        alt="social-sites"
+      />
+    </a>
+    <a
+      href="https://www.imdb.com/name/nm4805518/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <StyledSocialLogoImage
+        src={require('../../data/social-icons/instagram.png')}
         alt="social-sites"
       />
     </a>
