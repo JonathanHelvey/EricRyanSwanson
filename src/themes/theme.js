@@ -41,6 +41,65 @@ export const Section2 = styled.div`
   background-color: ${({ theme }) => theme.primaryLightDark};
 `;
 
+export const Section3 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8vw;
+  height: auto;
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryPurple};
+`;
+
+export const Section4 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8vw;
+  height: auto;
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryGreen};
+`;
+
+export const SectionHeaderRight = styled.div`
+  display: flex;
+  padding: 8vw;
+  height: 7vh:
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryPurple};
+`;
+
+export const SectionHeaderCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 8vw;
+  height: 7vh:
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryLightDark};
+`;
+
+export const SectionHeaderLeftGreen = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding: 8vw;
+  height: 7vh:
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryGreen};
+`;
+
+export const SectionHeaderLeftBrown = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  padding: 4vw;
+  padding-right: 15vw;
+  height: 90vh:
+  width: auto;
+  background-color: ${({ theme }) => theme.primaryHover};
+`;
+
 export const Header1 = styled.h1`
   font-weight: bolder;
   font-size: 60px;

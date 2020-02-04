@@ -23,8 +23,7 @@ const Menu = ({ open, setOpen }) => (
     <Link to="/photographs">Photographs</Link>
     <Link to="/resume">Resume</Link>
     <Link to="/reviews">Reviews</Link>
-    <Link to="/">Links</Link>
-    <Link to="/">Contact</Link>
+    <Link to="/contact">Contact</Link>
     <SocialMediaIcons />
   </StyledMenu>
 );

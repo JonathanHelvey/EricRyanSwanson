@@ -7,11 +7,11 @@ import SocialMediaIcons from '../SocialMediaIcons';
 import { SectionFooter, Wrapper, SiteTitle, CopyWrightDiv } from './Footer.styled';
 
 const Links = [
+  <Link to="/#">Home</Link>,
   <Link to="/#ArtistBio">Artist Bio</Link>,
   <Link to="/photographs">Photographs</Link>,
   <Link to="/">Resume</Link>,
   <Link to="/reviews">Reviews</Link>,
-  <Link to="/">Links</Link>,
   <Link to="/">Contact</Link>,
 ];
 

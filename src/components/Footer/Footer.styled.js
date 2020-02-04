@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 export const SectionFooter = styled.div`
   height: 30vh;
-  margin-bottom: -10px;
   background-color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: auto; 
@@ -14,7 +13,7 @@ export const SectionFooter = styled.div`
 export const Wrapper = styled.div`   
   display: flex;
   justify-content: flex-end;
-  margin-right: 10vw;
+  margin-right: 15vw;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     justify-content: center;  
   };
