@@ -9,7 +9,7 @@ const VideoGallery = () => (
       <source src={reel} type="EricSwansonReel/mp4" />
       <source src={reel} type="EricSwansonReel/mp4" />
       <track kind="captions" srcLang="en" />
-      Your browser does not support HTML5 video
+      Your browser does not support HTML5 video.
     </video>
   </Section3>
 );
