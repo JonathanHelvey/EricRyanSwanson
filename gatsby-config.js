@@ -43,7 +43,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `portfolio-starter-default`,
-        short_name: `ActorPortfolio`,
+        short_name: `Actor-Portfolio`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
