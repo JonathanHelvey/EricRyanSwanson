@@ -1,10 +1,10 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
 
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import ArtistBio from '../components/ArtistBio';
-import Hero from '../components/Hero/Hero';
+import Hero from '../components/Hero';
 
 
 const IndexPage = () => (
