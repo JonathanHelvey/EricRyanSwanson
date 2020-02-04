@@ -116,6 +116,7 @@ export const Header2 = styled.h2`
   font-size: 30px;
   color: ${({ theme }) => theme.primaryDark};
   text-align: center;
+  text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 26px;
   }
