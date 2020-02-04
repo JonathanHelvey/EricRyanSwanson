@@ -32,7 +32,7 @@ const Footer = () => {
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
           <Wrapper>
-            <SiteTitle>{Links.map((link) => <ul>{link}</ul>)}</SiteTitle>
+            <SiteTitle>{Links.map((link, index) => <ul key={`ID-${index}`}>{link}</ul>)}</SiteTitle>
           </Wrapper>
         </Grid>
         <Grid item xs={12} sm={4}>
