@@ -6,11 +6,11 @@ import ResumeFile from '../components/ResumeFile';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout/Layout';
 
-const ResumePage = () => (
+const Resume = () => (
   <Layout>
     <SEO title="Resume" />
     <ResumeFile />
   </Layout>
 );
 
-export default ResumePage;
+export default Resume;

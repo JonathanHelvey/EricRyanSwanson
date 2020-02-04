@@ -5,7 +5,7 @@ import ericrResume from '../../data/assets/EricResume.pdf';
 import { Header1 } from '../../themes/theme';
 import { ResumeWrapper, SectionHeader, buttonWrapper } from './ResumeFile.styled';
 
-const Resume = () => (
+const ResumeFile = () => (
   <>
     <SectionHeader>
       <buttonWrapper>
@@ -28,4 +28,4 @@ const Resume = () => (
   </>
 );
 
-export default Resume;
+export default ResumeFile;
