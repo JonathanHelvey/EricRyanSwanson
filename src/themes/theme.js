@@ -105,8 +105,8 @@ export const SectionHeaderLeftBrown = styled.div`
 export const Header1 = styled.h1`
   font-weight: bolder;
   font-size: 62px;
-  text-shadow: 2px 2px ${({ theme }) => theme.primaryDark};
-  color: ${({ theme }) => theme.primaryLight};
+  text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
+  color: ${({ theme }) => theme.primaryBlack};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 32px;
   }
@@ -114,12 +114,12 @@ export const Header1 = styled.h1`
 
 export const Header2 = styled.h2`
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 36px;
   color: ${({ theme }) => theme.primaryDark};
   text-align: center;
   text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    font-size: 26px;
+    font-size: 28px;
   }
 `;
 

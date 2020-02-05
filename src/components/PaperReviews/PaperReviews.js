@@ -5,11 +5,12 @@ import Img from 'gatsby-image';
 
 import {
   SectionHeaderRightPurple,
-  Section4,
+  Section2,
   Header1,
   Header2,
   StyledGrid,
 } from '../../themes/theme';
+import { ReviewWrapper } from './PaperReviews.styled';
 
 const PaperReviews = () => {
   const data = useStaticQuery(graphql`
@@ -36,23 +37,18 @@ const PaperReviews = () => {
       <SectionHeaderRightPurple>
         <Header1>Reviews</Header1>
       </SectionHeaderRightPurple>
-      <Section4>
-        <Grid container spacing={2}>
-          <StyledGrid item xs={4}>
-            <Img
-              fluid={data.newYork.childImageSharp.fluid}
-            />
-          </StyledGrid>
-          <StyledGrid item xs={8}>
+      <Section2>
+        <Grid container spacing={1}>
+          <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review) => (
-              <div>
+              <ReviewWrapper>
                 <Header2>{review.title}</Header2>
                 <p>{review.body}</p>
-              </div>
+              </ReviewWrapper>
             ))}
           </StyledGrid>
         </Grid>
-      </Section4>
+      </Section2>
     </>
   );
 };

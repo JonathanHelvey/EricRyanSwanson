@@ -1,7 +1,7 @@
 import Typography from 'typography';
-import altonTheme from 'typography-theme-alton';
+import kirkhamTheme from 'typography-theme-kirkham';
 
-altonTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
+kirkhamTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   // h1: {
   //   fontFamily: ['Lobster'].join(','),
   // },
@@ -11,9 +11,9 @@ altonTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   },
 });
 
-const typography = new Typography(altonTheme);
-altonTheme.baseFontSize = '24px'; // was 20px.
-altonTheme.headerFontFamily = 'lobster';
+const typography = new Typography(kirkhamTheme);
+kirkhamTheme.baseFontSize = '24px'; // was 20px.
+kirkhamTheme.headerFontFamily = 'lobster';
 
 
 // const typography = new Typography({

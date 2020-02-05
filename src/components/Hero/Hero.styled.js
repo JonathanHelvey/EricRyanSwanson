@@ -21,7 +21,7 @@ export const SiteHeaderTitle = styled.h1`
   margin: 30px;
   margin-top: 50vh;
   margin-left: 6vh;
-  font-size: 4vh;
+  font-size: 5vh;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 12px;
