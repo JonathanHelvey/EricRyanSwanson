@@ -7,6 +7,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 export const theme = createMuiTheme({
+  primaryBlack: '#222324',
   primaryDark: '#212629',
   primaryLightDark: '#798797',
   primaryLight: '#fbfbfb',
@@ -59,7 +60,7 @@ export const Section4 = styled.div`
   padding: 8vw;
   height: auto;
   width: auto;
-  background-color: ${({ theme }) => theme.primaryGreen};
+  background-color: ${({ theme }) => theme.primaryDark};
 `;
 
 export const SectionHeaderRightPurple = styled.div`

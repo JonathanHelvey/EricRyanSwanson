@@ -10,7 +10,7 @@ export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${({ theme }) => theme.primaryDark};
+  background: ${({ theme }) => theme.primaryBlack};
   height: 100vh;
   width: 25vw;
   text-align: left;

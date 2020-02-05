@@ -3,6 +3,7 @@ import React from 'react';
 import PhotoGallery from '../components/PhotoGallery';
 import VideoGallery from '../components/VideoGallery';
 import Carousel from '../components/Carousel';
+import { CarouselWrapper } from '../components/Carousel/Carousel.styled';
 
 import { Header1, SectionHeaderLeftBrown } from '../themes/theme';
 import Layout from '../components/Layout';
@@ -22,7 +23,9 @@ const Photographs = () => (
     </SectionHeaderLeftBrown>
     <VideoGallery />
     <PhotoGallery />
-    <Carousel />
+    <CarouselWrapper>
+      <Carousel />
+    </CarouselWrapper>
   </Layout>
 );
 
