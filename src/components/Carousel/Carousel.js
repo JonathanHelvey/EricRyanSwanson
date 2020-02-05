@@ -3,19 +3,26 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
+import { Section3 } from '../../themes/theme';
+import { CarouselWrapper } from './Carousel.styled';
+
 const DemoCarousel = () => {
   return (
-    <Carousel autoPlay interval={10000} infiniteLoop>
-      <div>
-        <img alt="ericryanswanson" src={require('../../data/images/Eric-222.jpg')} />
-      </div>
-      <div>
-        <img alt="ericryanswanson" src={require('../../data/images/Eric-164.jpg')} />
-      </div>
-      <div>
-        <img alt="ericryanswanson" src={require('../../data/images/Eric-151.jpg')} />
-      </div>
-    </Carousel>
+    <Section3>
+      <CarouselWrapper>
+        <Carousel autoPlay interval={10000} infiniteLoop>
+          <CarouselWrapper>
+            <img alt="ericryanswanson" src={require('../../data/images/EricBanner1.jpg')} />
+          </CarouselWrapper>
+          <CarouselWrapper>
+            <img alt="ericryanswanson" src={require('../../data/images/EricBanner2.jpg')} />
+          </CarouselWrapper>
+          <CarouselWrapper>
+            <img alt="ericryanswanson" src={require('../../data/images/EricBanner3.jpg')} />
+          </CarouselWrapper>
+        </Carousel>
+      </CarouselWrapper>
+    </Section3>
   );
 };
 
