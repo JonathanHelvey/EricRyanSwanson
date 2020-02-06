@@ -1,6 +1,10 @@
-Eric Ryan Swansons Actor Portfolio Site!
+# Eric Ryan Swansons Actor Portfolio Site!
 
-www.ericryanswanson.com
+https://5e38fcc54b7dd30008953f12--goofy-varahamihira-566118.netlify.com/
+
+## Built With
+
+Gatsby.js, Material-UI, Styled-Components, React-Hooks.
 
 ## 💫 Deploy
 
