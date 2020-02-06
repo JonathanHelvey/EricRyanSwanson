@@ -2,26 +2,12 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Grid from '@material-ui/core/Grid';
-import { Section2, Header1, SectionHeaderLeftBrown } from '../../themes/theme';
+import { Section2 } from '../../themes/theme';
 import { StyledGrid, StyledImg } from './PhotoGallery.styled';
 
 const Photographs = () => {
   const data = useStaticQuery(graphql`
   query {
-    ericPhoto1: file(relativePath: { eq: "5Headshot2014.JPG" }) {
-      childImageSharp {
-        fluid (maxWidth: 300, maxHeight: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    ericPhoto2: file(relativePath: { eq: "swanson3add.jpg" }) {
-      childImageSharp {
-        fluid (maxWidth: 300, maxHeight: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     ericPhoto3: file(relativePath: { eq: "Eric-151.jpg" }) {
       childImageSharp {
         fluid (maxWidth: 300, maxHeight: 400) {
@@ -70,16 +56,6 @@ const Photographs = () => {
     <>
       <Section2>
         <Grid container spacing={4}>
-          <StyledGrid item xs={4}>
-            <StyledImg
-              fluid={data.ericPhoto1.childImageSharp.fluid}
-            />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
-            <StyledImg
-              fluid={data.ericPhoto2.childImageSharp.fluid}
-            />
-          </StyledGrid>
           <StyledGrid item xs={4}>
             <StyledImg
               fluid={data.ericPhoto3.childImageSharp.fluid}
