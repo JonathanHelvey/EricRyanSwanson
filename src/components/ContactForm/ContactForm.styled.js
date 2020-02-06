@@ -24,3 +24,13 @@ export const SectionHeader = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
 `;
+
+export const Header = styled.h1`
+  font-weight: bolder;
+  font-size: 62px;
+  text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
+  color: ${({ theme }) => theme.primaryBlack};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 12px;
+  }
+`;

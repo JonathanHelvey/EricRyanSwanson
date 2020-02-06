@@ -3,13 +3,13 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
-import { Section1, Header1, SectionHeaderCenter } from '../../themes/theme';
-import { FormWrapper, SectionHeader } from './ContactForm.styled';
+import { Section1 } from '../../themes/theme';
+import { FormWrapper, SectionHeader, Header } from './ContactForm.styled';
 
 const ContactForm = () => (
   <>
     <SectionHeader>
-      <Header1 style={{ textAlign: 'right' }} className="contact-title">Get In Touch!</Header1>
+      <Header style={{ textAlign: 'right' }}>Get In Touch!</Header>
     </SectionHeader>
     <Section1>
       <FormWrapper>
