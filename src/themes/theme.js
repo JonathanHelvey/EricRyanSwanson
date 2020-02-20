@@ -29,6 +29,10 @@ export const Section1 = styled.div`
   height: 90vh:
   width: auto;
   background-color: ${(props) => (props.Primary ? theme.primaryLightDark : theme.primaryLight)};
+  @media (max-width: ${() => theme.mobile.md}) {
+    padding-left: 14vw;
+    padding-right: 14vw;
+  }
 `;
 
 
@@ -60,6 +64,7 @@ export const Header1 = styled.h1`
   color: ${() => theme.primaryBlack};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 32px;
+    text-align: center;
   }
 `;
 
@@ -72,6 +77,7 @@ export const Header2 = styled.h2`
   text-align: ${(props) => (props.Left && 'left')};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 28px;
+    text-align: center;
   }
 `;
 
