@@ -34,7 +34,7 @@ export const TextFieldStyle = styled(TextField)`
 
 export const ContactHeader = styled.h1`
   font-weight: bolder;
-  font-size: 68px;
+  font-size: 60px;
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};

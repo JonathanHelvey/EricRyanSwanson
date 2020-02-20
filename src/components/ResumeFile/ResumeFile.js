@@ -10,7 +10,7 @@ const ResumeFile = () => (
     <SectionHeader Right Secondary>
       <buttonWrapper>
         <div>
-          <Header1 Right>Resume</Header1>
+          <Header1 Right lg>Resume</Header1>
         </div>
         <Button variant="outlined" component="span" type="button" className="resume-button">
           <a href={require('../../data/assets/EricResume.pdf')} download>
