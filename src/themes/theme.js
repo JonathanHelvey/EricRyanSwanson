@@ -52,6 +52,10 @@ export const SectionHeader = styled.div`
   background-color: ${(props) => (props.Primary && theme.primaryLightDark)};
   background-color: ${(props) => (props.Secondary && theme.primaryGreen)};
   background-color: ${(props) => (props.Third && theme.primaryHover)};
+  /* @media (max-width: ${() => theme.mobile.md}) {
+    font-size: 34px;
+    text-align: center;
+  }; */
 `;
 
 // Can Fix theser and put h1, h2, h3, h4 together.
@@ -66,7 +70,6 @@ export const Header1 = styled.h1`
   color: ${() => theme.primaryBlack};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 34px;
-    text-align: center;
   };
 `;
 
@@ -81,7 +84,6 @@ export const Header2 = styled.h2`
   text-align: ${(props) => (props.Left && 'left')};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 24px;
-    text-align: center;
   };
 `;
 

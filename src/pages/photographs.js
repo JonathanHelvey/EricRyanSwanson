@@ -15,7 +15,7 @@ const Photographs = () => (
     <SEO title="Eric Swanson Photographs" />
     <SectionHeader Third alignContent="flex-end">
       <div>
-        <Header1 Right md>Photographs &</Header1>
+        <Header1 Right lg>Photographs &</Header1>
       </div>
       <div>
         <Header1 Right lg>Videos</Header1>
