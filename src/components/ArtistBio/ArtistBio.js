@@ -68,7 +68,7 @@ const ArtistBio = () => {
     <Section1>
       <Grid container spacing={3}>
         <StyledGrid item xs={8}>
-          <Header1 id="ArtistBio">Artist Bio</Header1>
+          <Header1 id="ArtistBio" Center>Artist Bio</Header1>
           <p>
             I feel it is my job as an
             <strong> actor </strong>
@@ -90,7 +90,7 @@ const ArtistBio = () => {
           </ImageWrapper>
         </StyledGrid>
         <StyledGrid item xs={4}>
-          <Header2>Latest News</Header2>
+          <Header2 Center>Latest News</Header2>
           <NewsBox>
             <Wrapper>
               <ScrollDiv>

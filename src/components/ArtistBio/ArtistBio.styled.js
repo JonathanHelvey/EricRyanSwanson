@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const ImageWrapper = styled.div`  
+export const ImageWrapper = styled.div`
+  /* display: flex;  */
+  /* justify-content: flex-start; */
+  /* padding-left: 5vw; */
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     display: none;    
   };

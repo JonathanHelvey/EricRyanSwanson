@@ -26,7 +26,7 @@ const PaperReviews = () => {
   return (
     <>
       <SectionHeader Primary>
-        <Header1 Right lg>Reviews</Header1>
+        <Header1 Right>Reviews</Header1>
       </SectionHeader>
       <Section1 Right>
         <Grid container spacing={1}>

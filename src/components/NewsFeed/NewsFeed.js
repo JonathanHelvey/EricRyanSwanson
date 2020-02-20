@@ -14,7 +14,7 @@ import {
   NewsDateStyle,
   NewsCard,
 } from './NewsFeed.styled';
-import { Header2, theme } from '../../themes/theme';
+import { Header1, theme } from '../../themes/theme';
 
 const useStyles = makeStyles({
   card: {
@@ -50,7 +50,6 @@ const NewsFeed = () => {
 `);
   return (
     <>
-      <Header2>Latest News</Header2>
       <NewsBox>
         <Wrapper>
           <ScrollDiv>

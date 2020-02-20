@@ -52,18 +52,17 @@ export const SectionHeader = styled.div`
   background-color: ${(props) => (props.Primary && theme.primaryLightDark)};
   background-color: ${(props) => (props.Secondary && theme.primaryGreen)};
   background-color: ${(props) => (props.Third && theme.primaryHover)};
-  /* @media (max-width: ${() => theme.mobile.md}) {
+  @media (max-width: ${() => theme.mobile.md}) {
     font-size: 34px;
-    text-align: center;
-  }; */
+  };
 `;
 
 // Can Fix theser and put h1, h2, h3, h4 together.
 export const Header1 = styled.h1`
   font-weight: bolder;
   font-size: ${(props) => (props.lg && '60px')};
-  font-size: ${(props) => (props.sm && '42px')};
-  font-size: ${(props) => (props.Center && 'center')};
+  font-size: ${(props) => (props.md && '50px')};
+  font-size: ${(props) => (props.sm && '46px')};
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};
@@ -75,8 +74,8 @@ export const Header1 = styled.h1`
 
 export const Header2 = styled.h2`
   font-weight: bolder;
-  font-size: ${(props) => (props.lg && '60px')};
-  font-size: ${(props) => (props.md && '42px')};
+  font-size: ${(props) => (props.lg && '42px')};
+  font-size: ${(props) => (props.md && '32px')};
   font-size: ${(props) => (props.sm && '22px')};
   color: ${() => theme.primaryDark};
   text-align: ${(props) => (props.Center && 'center')};
