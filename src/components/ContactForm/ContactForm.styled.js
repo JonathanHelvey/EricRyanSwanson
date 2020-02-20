@@ -20,14 +20,26 @@ export const SectionHeader = styled.div`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    padding-right: 36px;
-  }
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    background-attachment:scroll
+  };
 `;
 
 export const TextFieldStyle = styled(TextField)`
   width: 50vw;
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     width: auto;
+  }
+`;
+
+export const ContactHeader = styled.h1`
+  font-weight: bolder;
+  font-size: 68px;
+  text-align: ${(props) => (props.Center && 'center')};
+  text-align: ${(props) => (props.Right && 'right')};
+  text-align: ${(props) => (props.Left && 'left')};
+  color: ${({ theme }) => theme.primaryBlack};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    display: none;
   }
 `;

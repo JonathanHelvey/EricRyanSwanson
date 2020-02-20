@@ -47,7 +47,11 @@ const Footer = () => {
           </Wrapper>
         </Grid>
       </Grid>
-      <CopyWrightDiv>@Copywright Eric Ryan Swanson-2020</CopyWrightDiv>
+      <CopyWrightDiv>
+        {' '}
+        <span aria-label="Copyright" role="img"> ©️ </span>
+        Copywright Eric Ryan Swanson 2020
+      </CopyWrightDiv>
     </SectionFooter>
   );
 };

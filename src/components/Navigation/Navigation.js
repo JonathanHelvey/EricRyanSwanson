@@ -7,6 +7,8 @@ import { StyledMenu, StyledBurger, NavigationWrapper } from './Navigation.styled
 import { Header2 } from '../../themes/theme';
 import SocialMediaIcons from '../SocialMediaIcons';
 
+import { CopyWrightDiv } from '../Footer/Footer.styled';
+
 
 const Burger = ({ open, setOpen }) => (
   <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -26,6 +28,10 @@ const Menu = ({ open, setOpen }) => (
     <Link to="/reviews">Reviews</Link>
     <Link to="/contact">Contact</Link>
     <SocialMediaIcons />
+    <CopyWrightDiv>
+      <span aria-label="Copyright" role="img"> ©️ </span>
+      Copywright Eric Ryan Swanson 2020
+    </CopyWrightDiv>
   </StyledMenu>
 );
 

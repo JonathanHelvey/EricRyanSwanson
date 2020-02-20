@@ -63,8 +63,7 @@ export const Header1 = styled.h1`
   text-align: ${(props) => (props.Left && 'left')};
   color: ${() => theme.primaryBlack};
   @media (max-width: ${() => theme.mobile.md}) {
-    font-size: 32px;
-    text-align: center;
+    font-size: 34px;
   }
 `;
 
@@ -77,7 +76,6 @@ export const Header2 = styled.h2`
   text-align: ${(props) => (props.Left && 'left')};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 28px;
-    text-align: center;
   }
 `;
 

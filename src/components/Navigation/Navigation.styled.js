@@ -22,6 +22,7 @@ export const StyledMenu = styled.nav`
 
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     width: 100vw;
+    padding-top: 2vh;
   }
   h1, h2 {
     color: ${({ theme }) => theme.primaryLight};
