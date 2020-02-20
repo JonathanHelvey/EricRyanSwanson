@@ -74,6 +74,7 @@ export const Header1 = styled.h1`
 
 export const Header2 = styled.h2`
   font-weight: bolder;
+  font-style: ${(props) => (props.italic ? 'italic' : 'none')};
   font-size: ${(props) => (props.lg && '42px')};
   font-size: ${(props) => (props.md && '32px')};
   font-size: ${(props) => (props.sm && '22px')};

@@ -33,7 +33,7 @@ const PaperReviews = () => {
           <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review, idx) => (
               <ul key={`REVIEW${idx}`}>
-                <Header2 Left>{review.title}</Header2>
+                <Header2 Left italic>{review.title}</Header2>
                 <p>{review.body}</p>
                 <hr />
               </ul>
