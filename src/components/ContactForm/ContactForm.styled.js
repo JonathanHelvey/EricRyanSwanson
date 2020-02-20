@@ -10,8 +10,6 @@ export const FormWrapper = styled.div`
 `;
 
 export const SectionHeader = styled.div`
-  display: flex;
-  justify-content: flex-start;
   padding: 12vw;
   height: 60vh:
   width: auto;
@@ -23,6 +21,9 @@ export const SectionHeader = styled.div`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    padding-right: 36px;
+  }
 `;
 
 export const Header = styled.h1`
