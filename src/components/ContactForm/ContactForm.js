@@ -11,7 +11,7 @@ const ContactForm = () => (
       <ContactHeader Right>Get In Touch!</ContactHeader>
     </SectionHeader>
     <Section1>
-      <Header2 Center>Lets Work Together!</Header2>
+      <Header2 Center md>Lets Work Together!</Header2>
       <FormWrapper>
         <form
           name="contact"

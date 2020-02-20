@@ -57,26 +57,30 @@ export const SectionHeader = styled.div`
 // Can Fix theser and put h1, h2, h3, h4 together.
 export const Header1 = styled.h1`
   font-weight: bolder;
-  font-size: 68px;
+  font-size: ${(props) => (props.lg && '60px')};
+  font-size: ${(props) => (props.sm && '42px')};
+  font-size: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};
   color: ${() => theme.primaryBlack};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 34px;
-  }
+  };
 `;
 
 export const Header2 = styled.h2`
   font-weight: bolder;
-  font-size: 42px;
+  font-size: ${(props) => (props.lg && '60px')};
+  font-size: ${(props) => (props.md && '42px')};
+  font-size: ${(props) => (props.sm && '22px')};
   color: ${() => theme.primaryDark};
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 28px;
-  }
+  };
 `;
 
 export const StyledGrid = styled(Grid)`
