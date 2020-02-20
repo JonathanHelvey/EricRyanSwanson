@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import img from '../../data/images/EricBanner2.jpg';
+import TextField from '@material-ui/core/TextField';
 
 export const FormWrapper = styled.div`
   form {
@@ -33,5 +34,12 @@ export const Header = styled.h1`
   color: ${({ theme }) => theme.primaryBlack};
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     font-size: 18px;
+  }
+`;
+
+export const TextFieldStyle = styled(TextField)`
+  width: 50vw;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    width: auto;
   }
 `;

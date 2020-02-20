@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 
 import { Section1 } from '../../themes/theme';
-import { FormWrapper, SectionHeader, Header } from './ContactForm.styled';
+import { FormWrapper, SectionHeader, Header, TextFieldStyle } from './ContactForm.styled';
 
 const ContactForm = () => (
   <>
@@ -28,16 +28,16 @@ const ContactForm = () => (
             />
           </p>
           <p>
-            <TextField required id="standard-required" label="Name" />
+            <TextFieldStyle required id="standard-required" label="Name" />
           </p>
           <p>
-            <TextField required id="standard-required" label="Email" />
+            <TextFieldStyle required id="standard-required" label="Email" />
           </p>
           <p>
-            <TextField required id="standard-required" label="Company" />
+            <TextFieldStyle required id="standard-required" label="Company" />
           </p>
           <p>
-            <TextField
+            <TextFieldStyle
               id="outlined-multiline-static"
               label="Message"
               multiline
