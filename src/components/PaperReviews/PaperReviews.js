@@ -35,6 +35,7 @@ const PaperReviews = () => {
               <ul key={`REVIEW${idx}`}>
                 <Header2 Left>{review.title}</Header2>
                 <p>{review.body}</p>
+                <hr />
               </ul>
             ))}
           </StyledGrid>
