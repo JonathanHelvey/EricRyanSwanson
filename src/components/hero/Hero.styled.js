@@ -8,7 +8,7 @@ export const HeroWrapper = styled.div`
   background-attachment: fixed;
   margin-top: -10px;
   background-position: center;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
