@@ -4,7 +4,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 export const theme = createMuiTheme({
-  primaryBlack: '#101313',
+  primaryBlack: 'black',
   primaryDark: '#212629',
   primaryLightDark: '#909496',
   primaryLight: '#E9E9E9',

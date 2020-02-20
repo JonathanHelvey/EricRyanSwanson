@@ -21,8 +21,8 @@ const Photographs = () => (
         <Header1 Right>Videos</Header1>
       </div>
     </SectionHeader>
-    <VideoGallery />
     <PhotoGallery />
+    <VideoGallery />
     <CarouselWrapper>
       <Carousel />
     </CarouselWrapper>
