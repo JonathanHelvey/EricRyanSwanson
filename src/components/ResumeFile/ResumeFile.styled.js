@@ -9,7 +9,7 @@ export const ResumeWrapper = styled.div`
   height: auto;
   position: relative;
   width: 100vw;
-  background-color: ${({ theme }) => theme.primaryDark};
+  background-color: ${({ theme }) => theme.primaryLight};
   object {
     height: 100vh;
     width: 100%;

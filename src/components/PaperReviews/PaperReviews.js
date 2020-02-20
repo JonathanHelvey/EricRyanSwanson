@@ -9,18 +9,10 @@ import {
   Header2,
   StyledGrid,
 } from '../../themes/theme';
-import { ReviewWrapper } from './PaperReviews.styled';
 
 const PaperReviews = () => {
   const data = useStaticQuery(graphql`
   query {
-    newYork: file(relativePath: { eq: "newsFire.jpg" }) {
-      childImageSharp {
-        fluid (maxWidth: 300, maxHeight: 400) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     reviews: allReviewFilesJson {
       nodes {
         review
@@ -40,10 +32,10 @@ const PaperReviews = () => {
         <Grid container spacing={1}>
           <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review, idx) => (
-              <ReviewWrapper key={`REVIEW${idx}`}>
-                <Header2 Center>{review.title}</Header2>
+              <ul key={`REVIEW${idx}`}>
+                <Header2 Left>{review.title}</Header2>
                 <p>{review.body}</p>
-              </ReviewWrapper>
+              </ul>
             ))}
           </StyledGrid>
         </Grid>
