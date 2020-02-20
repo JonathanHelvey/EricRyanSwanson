@@ -15,6 +15,9 @@ export const HeroWrapper = styled.div`
   -o-background-size: cover;
   height: 100vh;
   width: auto;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    background-attachment:scroll
+  };
 `;
 
 export const SiteHeaderTitle = styled.h1`
