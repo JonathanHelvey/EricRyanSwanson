@@ -1,11 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Grid from '@material-ui/core/Grid';
-import Img from 'gatsby-image';
 
 import {
-  SectionHeaderRightPurple,
-  Section2,
+  SectionHeader,
+  Section1,
   Header1,
   Header2,
   StyledGrid,
@@ -34,21 +33,21 @@ const PaperReviews = () => {
 `);
   return (
     <>
-      <SectionHeaderRightPurple>
-        <Header1>Reviews</Header1>
-      </SectionHeaderRightPurple>
-      <Section2>
+      <SectionHeader Primary>
+        <Header1 Right>Reviews</Header1>
+      </SectionHeader>
+      <Section1 Right>
         <Grid container spacing={1}>
           <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review) => (
               <ReviewWrapper>
-                <Header2>{review.title}</Header2>
+                <Header2 Center>{review.title}</Header2>
                 <p>{review.body}</p>
               </ReviewWrapper>
             ))}
           </StyledGrid>
         </Grid>
-      </Section2>
+      </Section1>
     </>
   );
 };

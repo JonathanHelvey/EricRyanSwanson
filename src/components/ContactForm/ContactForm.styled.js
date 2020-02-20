@@ -12,8 +12,8 @@ export const FormWrapper = styled.div`
 export const SectionHeader = styled.div`
   display: flex;
   justify-content: flex-start;
-  padding: 11vw;
-  height: 25vh:
+  padding: 12vw;
+  height: 60vh:
   width: auto;
   background-color: ${({ theme }) => theme.primaryLightDark};
   background: url(${img});
@@ -30,7 +30,7 @@ export const Header = styled.h1`
   font-size: 62px;
   text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
   color: ${({ theme }) => theme.primaryBlack};
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    font-size: 12px;
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    font-size: 18px;
   }
 `;

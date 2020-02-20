@@ -5,7 +5,7 @@ import VideoGallery from '../components/VideoGallery';
 import Carousel from '../components/Carousel';
 import { CarouselWrapper } from '../components/Carousel/Carousel.styled';
 
-import { Header1, SectionHeaderLeftBrown } from '../themes/theme';
+import { Header1, SectionHeader } from '../themes/theme';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
@@ -13,14 +13,14 @@ import SEO from '../components/SEO';
 const Photographs = () => (
   <Layout>
     <SEO title="Eric Swanson Photographs" />
-    <SectionHeaderLeftBrown>
+    <SectionHeader Third alignContent="flex-end">
       <div>
-        <Header1 style={{ textAlign: 'right' }}>Photographs &</Header1>
+        <Header1 Right>Photographs &</Header1>
       </div>
       <div>
-        <Header1 style={{ textAlign: 'right' }}>Videos</Header1>
+        <Header1 Right>Videos</Header1>
       </div>
-    </SectionHeaderLeftBrown>
+    </SectionHeader>
     <VideoGallery />
     <PhotoGallery />
     <CarouselWrapper>

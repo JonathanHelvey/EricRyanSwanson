@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Grid from '@material-ui/core/Grid';
-import { Section2 } from '../../themes/theme';
+import { Section1 } from '../../themes/theme';
 import { StyledGrid, StyledImg } from './PhotoGallery.styled';
 
 const Photographs = () => {
@@ -29,21 +29,21 @@ const Photographs = () => {
         }
       }
     }
-    ericPhoto6: file(relativePath: { eq: "EricBanner1.jpg" }) {
+    ericPhoto6: file(relativePath: { eq: "eric-168.jpg" }) {
       childImageSharp {
         fluid (maxWidth: 300, maxHeight: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ericPhoto7: file(relativePath: { eq: "11Headshot2014.JPG" }) {
+    ericPhoto7: file(relativePath: { eq: "5Headshot2014.JPG" }) {
       childImageSharp {
         fluid (maxWidth: 300, maxHeight: 400) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    ericPhoto8: file(relativePath: { eq: "7Headshot2014.JPG" }) {
+    ericPhoto8: file(relativePath: { eq: "11Headshot2014.JPG" }) {
       childImageSharp {
         fluid (maxWidth: 300, maxHeight: 400) {
           ...GatsbyImageSharpFluid
@@ -54,7 +54,7 @@ const Photographs = () => {
 `);
   return (
     <>
-      <Section2>
+      <Section1>
         <Grid container spacing={4}>
           <StyledGrid item xs={4}>
             <StyledImg
@@ -87,7 +87,7 @@ const Photographs = () => {
             />
           </StyledGrid>
         </Grid>
-      </Section2>
+      </Section1>
     </>
   );
 };

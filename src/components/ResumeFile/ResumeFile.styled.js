@@ -8,12 +8,12 @@ export const buttonWrapper = styled.div`
 `;
 
 export const ResumeWrapper = styled.div`
-  height: 100vh;
+  height: auto;
   position: relative;
   width: 100vw;
   background-color: ${({ theme }) => theme.primaryDark};
   object {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
   }
 `;
