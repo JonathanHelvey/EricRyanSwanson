@@ -1,8 +1,6 @@
-/* eslint-disable import/prefer-default-export */
-
 import styled from 'styled-components';
-import img from '../../data/images/EricBanner2.jpg';
 import TextField from '@material-ui/core/TextField';
+import img from '../../data/images/EricBanner2.jpg';
 
 export const FormWrapper = styled.div`
   form {
@@ -24,16 +22,6 @@ export const SectionHeader = styled.div`
   -o-background-size: cover;
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     padding-right: 36px;
-  }
-`;
-
-export const Header = styled.h1`
-  font-weight: bolder;
-  font-size: 62px;
-  text-shadow: 2px 2px ${({ theme }) => theme.primaryLightDark};
-  color: ${({ theme }) => theme.primaryBlack};
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    font-size: 18px;
   }
 `;
 

@@ -1,8 +1,6 @@
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable react/no-array-index-key */
 import { createGlobalStyle } from 'styled-components';
 
+// eslint-disable-next-line import/prefer-default-export
 export const GlobalStyles = createGlobalStyle`
   html, body {
     margin: 0;

@@ -1,15 +1,14 @@
 import React from 'react';
 
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 
-import { Section1 } from '../../themes/theme';
-import { FormWrapper, SectionHeader, Header, TextFieldStyle } from './ContactForm.styled';
+import { Section1, Header1 } from '../../themes/theme';
+import { FormWrapper, SectionHeader, TextFieldStyle } from './ContactForm.styled';
 
 const ContactForm = () => (
   <>
     <SectionHeader>
-      <Header style={{ textAlign: 'right' }}>Get In Touch!</Header>
+      <Header1 Right>Get In Touch!</Header1>
     </SectionHeader>
     <Section1>
       <FormWrapper>
@@ -47,7 +46,7 @@ const ContactForm = () => (
           </p>
           <p>
             <Button variant="outlined" type="submit">
-                Send
+              Send
             </Button>
           </p>
         </form>

@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const NewsBox = styled.div`
-  /* background-color: ${({ theme }) => theme.primaryGreen}; */
-  /* margin-top: 2vh;  */
-  /* margin-bottom: 2vh; */
   padding: 5% 2vw; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
   /* -webkit-transform: skewY(-5deg);
@@ -15,7 +12,6 @@ export const NewsBox = styled.div`
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.primaryLightDark};
-  /* margin-top: 1vh; */
   padding: 5% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
   
   /* -webkit-transform: skewY(5deg);

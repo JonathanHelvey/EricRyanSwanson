@@ -57,7 +57,6 @@ export const Header1 = styled.h1`
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};
-  text-shadow: 2px 2px ${() => theme.primaryLightDark};
   color: ${() => theme.primaryBlack};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 32px;
@@ -71,27 +70,8 @@ export const Header2 = styled.h2`
   text-align: ${(props) => (props.Center && 'center')};
   text-align: ${(props) => (props.Right && 'right')};
   text-align: ${(props) => (props.Left && 'left')};
-  text-shadow: 2px 2px ${() => theme.primaryLightDark};
   @media (max-width: ${() => theme.mobile.md}) {
     font-size: 28px;
-  }
-`;
-
-export const Header3 = styled.h1`
-  font-weight: bolder;
-  font-size: 24px;
-  color: ${() => theme.primaryDark};
-  @media (max-width: ${() => theme.mobile.md}) {
-    font-size: 20px;
-  }
-`;
-
-export const Header4 = styled.h1`
-  font-weight: bolder;
-  font-size: 18px;
-  color: ${() => theme.primaryDark};
-  @media (max-width: ${() => theme.mobile.md}) {
-    font-size: 16px;
   }
 `;
 

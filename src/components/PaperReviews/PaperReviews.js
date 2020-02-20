@@ -39,8 +39,8 @@ const PaperReviews = () => {
       <Section1 Right>
         <Grid container spacing={1}>
           <StyledGrid item xs={12}>
-            {data.reviews.nodes.map((review) => (
-              <ReviewWrapper>
+            {data.reviews.nodes.map((review, idx) => (
+              <ReviewWrapper key={`REVIEW${idx}`}>
                 <Header2 Center>{review.title}</Header2>
                 <p>{review.body}</p>
               </ReviewWrapper>
