@@ -10,6 +10,8 @@ import {
   StyledGrid,
 } from '../../themes/theme';
 
+// TODO: FIX STYLES IN THIS FILE?
+
 const PaperReviews = () => {
   const data = useStaticQuery(graphql`
   query {
@@ -33,8 +35,20 @@ const PaperReviews = () => {
           <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review, idx) => (
               <ul key={`REVIEW${idx}`}>
-                <Header2 Left italic>{review.title}</Header2>
-                <p>{review.body}</p>
+                <Header2 Left>{review.title}</Header2>
+                <p style={{ fontSize: '25px', fontStyle: 'italic', marginTop: '4vh' }}>
+                  <img
+                    src={require('../../data/images/quote-marks.png')}
+                    alt="quotes"
+                    style={{ width: '20px', height: '20px', transform: 'rotate(180deg)' }}
+                  />
+                  {review.body}
+                  <img
+                    src={require('../../data/images/quote-marks.png')}
+                    alt="quotes"
+                    style={{ width: '20px', height: '20px' }}
+                  />
+                </p>
                 <hr />
               </ul>
             ))}
