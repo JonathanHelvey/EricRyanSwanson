@@ -28,14 +28,14 @@ const PaperReviews = () => {
   return (
     <>
       <SectionHeader Primary>
-        <Header1 Right>Reviews</Header1>
+        <Header1 Right lg>Reviews</Header1>
       </SectionHeader>
       <Section1 Right>
         <Grid container spacing={1}>
           <StyledGrid item xs={12}>
             {data.reviews.nodes.map((review, idx) => (
               <ul key={`REVIEW${idx}`}>
-                <Header2 Left>{review.title}</Header2>
+                <Header2 Left md>{review.title}</Header2>
                 <p style={{ fontSize: '25px', fontStyle: 'italic', marginTop: '4vh' }}>
                   <img
                     src={require('../../data/images/quote-marks.png')}
