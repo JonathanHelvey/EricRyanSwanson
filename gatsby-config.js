@@ -2,7 +2,7 @@
 /* eslint-disable react/no-array-index-key */
 module.exports = {
   siteMetadata: {
-    title: `Eric Ryan Swanson`,
+    title: `Eric Swanson`,
     description: `Actor`,
     author: `Jonathan Helvey`,
     siteUrl: 'https://www.ericryanswanson.com',
