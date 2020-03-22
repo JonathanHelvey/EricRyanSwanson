@@ -5,9 +5,12 @@ module.exports = {
     title: `Eric Ryan Swanson`,
     description: `Actor`,
     author: `Jonathan Helvey`,
+    siteUrl: 'https://www.ericryanswanson.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -61,6 +64,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
