@@ -20,7 +20,6 @@ const NotFoundPage = () => (
         <p>Please Click Another Link</p>
       </div>
     </div>
-
   </Layout>
 );
 
