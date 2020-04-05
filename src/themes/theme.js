@@ -26,7 +26,7 @@ export const Section1 = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 8vw;
-  height: 90vh:
+  height: 90vh;
   width: auto;
   background-color: ${(props) => (props.Primary ? theme.primaryLightDark : theme.primaryLight)};
   @media (max-width: ${() => theme.mobile.md}) {
