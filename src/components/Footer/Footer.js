@@ -29,7 +29,7 @@ const Footer = () => {
 `);
   return (
     <SectionFooter>
-      <Grid container spacing={3}>
+      <Grid container spacing={10}>
         <Grid item xs={12} sm={4}>
           <Wrapper>
             <SiteTitle>{Links.map((link, index) => <ul key={`ID-${index}`}>{link}</ul>)}</SiteTitle>

@@ -43,19 +43,21 @@ export const ScrollDiv = styled.div`
   
 `;
 
-export const NewsCard = styled.h4`
+export const NewsCard = styled.div`
   color: ${({ theme }) => theme.primaryLight};
   text-align: center;
-  /* font-style: italic; */
-  line-height: 1em;
+  margin: 1em;
+  p {
+    font-style: italic;
+  }
 `;
 
-export const NewsHeadlineStyle = styled.h4`
+export const NewsHeadlineStyle = styled.h5`
   color: ${({ theme }) => theme.primaryHover};
   text-align: center;
 `;
 
-export const NewsDateStyle = styled.h6`
+export const NewsDateStyle = styled.p`
   color: ${({ theme }) => theme.primaryLightDark};
   text-align: center;
 `;

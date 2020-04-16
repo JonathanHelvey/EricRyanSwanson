@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const SectionFooter = styled.div`
-  height: 35vh;
+  height: 50vh;
+  margin-bottom: -10vh;
   background-color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: auto; 

@@ -9,31 +9,25 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
-  height: 100vh;
-  width: 25vw;
+  height: 110vh;
+  width: 30vw;
   text-align: left;
-  padding: 2rem;
   position: fixed;
-  top: 0;
-  left: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   z-index: 8;
 
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     width: 100vw;
-    padding-top: 2vh;
   }
   h1, h2 {
     color: ${({ theme }) => theme.primaryLight};
     text-align: center;
-    padding-bottom: 3vh;
   }
 
   a {
     text-align: center;
-    padding: 2rem 0;
-    font-weight: bold;
+    padding: 1.3rem 0;
     letter-spacing: 0.3rem;
     color: ${({ theme }) => theme.primaryLightDark};
     text-decoration: none;
@@ -42,7 +36,7 @@ export const StyledMenu = styled.nav`
     @media (max-width: ${({ theme }) => theme.mobile.md}) {
       font-size: 1rem;
       text-align: center;
-      padding: 1rem 0;
+      padding: .3rem 0;
     }
 
     &:hover {

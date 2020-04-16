@@ -71,8 +71,8 @@ const ArtistBio = () => {
         <StyledGrid item xs={8}>
           <Header1 id="ArtistBio" Center>Artist Bio</Header1>
           <StyledParagraph>
-            I feel it is my job as an
-            <strong> actor </strong>
+            It is my job as an
+            <strong> Actor </strong>
             to discover a character’s soul and portray it externally with great ease and normality.
             As an actor, I’m most attracted to characters with complicated psyches and darker desires.
             I am a physical actor. I investigate and construct characters through physicalities, discovering and creating an external connection before moving to internal exploration.
@@ -101,7 +101,7 @@ const ArtistBio = () => {
                       <CardContent className={classes.title}>
                         <NewsHeadlineStyle>{frontmatter.title}</NewsHeadlineStyle>
                         <NewsDateStyle>{frontmatter.date}</NewsDateStyle>
-                        <div dangerouslySetInnerHTML={{ __html: html }} />
+                        <p dangerouslySetInnerHTML={{ __html: html }} />
                       </CardContent>
                     </Card>
                   </NewsCard>
