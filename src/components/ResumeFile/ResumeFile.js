@@ -3,12 +3,12 @@ import Button from '@material-ui/core/Button';
 import ericrResume from '../../data/assets/EricResume.pdf';
 
 import { Header1, SectionHeader } from '../../themes/theme';
-import { ResumeWrapper, buttonWrapper } from './ResumeFile.styled';
+import { ResumeWrapper, ButtonWrapper } from './ResumeFile.styled';
 
 const ResumeFile = () => (
   <>
     <SectionHeader Right Secondary>
-      <buttonWrapper>
+      <ButtonWrapper>
         <div>
           <Header1 Right lg>Resume</Header1>
         </div>
@@ -17,7 +17,7 @@ const ResumeFile = () => (
             Download Resume PDF
           </a>
         </Button>
-      </buttonWrapper>
+      </ButtonWrapper>
     </SectionHeader>
     <ResumeWrapper>
       <object type="application/pdf" data={ericrResume} title="resume">

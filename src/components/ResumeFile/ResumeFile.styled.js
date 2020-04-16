@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const buttonWrapper = styled.div`
+export const ButtonWrapper = styled.div`
   justify-content: flex-end;
   align-items: flex-end;
 `;
