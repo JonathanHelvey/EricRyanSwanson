@@ -46,8 +46,8 @@ export const ScrollDiv = styled.div`
 export const NewsCard = styled.h4`
   color: ${({ theme }) => theme.primaryLight};
   text-align: center;
-  font-weight: bold;
   font-style: italic;
+  line-height: 1em;
 `;
 
 export const NewsHeadlineStyle = styled.h4`
