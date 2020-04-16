@@ -10,7 +10,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
-  height: 120vh;
+  height: 100vh;
   width: 30vw;
   text-align: left;
   position: fixed;
@@ -20,6 +20,7 @@ export const StyledMenu = styled.nav`
 
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     width: 100vw;
+    height: 105vh;
   }
   h1, h2 {
     color: ${({ theme }) => theme.primaryLight};
@@ -37,7 +38,7 @@ export const StyledMenu = styled.nav`
     @media (max-width: ${({ theme }) => theme.mobile.md}) {
       font-size: 1rem;
       text-align: center;
-      padding: .3rem 0;
+      padding: .4rem 0;
     }
 
     &:hover {
@@ -50,6 +51,7 @@ export const StyledBurger = styled.button`
   position: fixed;
   top: 5%;
   left: 1em;
+  bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
