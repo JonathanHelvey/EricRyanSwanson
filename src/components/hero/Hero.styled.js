@@ -26,11 +26,11 @@ export const SiteHeaderTitle = styled.h1`
   margin-left: 8vh;
   font-size: 5vh;
   color: ${({ theme }) => theme.primaryLight};
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    font-size: 12px;
-  };
-  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     font-size: 2vh;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 1vh;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;

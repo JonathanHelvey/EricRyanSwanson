@@ -54,7 +54,7 @@ export const StyledMenu = styled.nav`
 export const StyledBurger = styled.button`
   position: fixed;
   top: 5%;
-  left: 2rem;
+  left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -79,7 +79,7 @@ export const StyledBurger = styled.button`
     position: relative;
     transform-origin: 1px;
     @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    height: 0.1rem;
+    height: 0.2rem;
   }
 
     :first-child {
