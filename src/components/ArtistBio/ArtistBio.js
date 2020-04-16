@@ -80,7 +80,7 @@ const ArtistBio = () => {
             I have worked as an architectural metal re finisher, barista, standardized patient, segway tour guide, manager of operations, admin, dog walker and personal assistant.
             <br />
             <br />
-            <i> * I was born and raised in Chicago, IL and currently reside in Manhattan. *</i>
+            <i>I was born and raised in Chicago, IL and currently reside in Manhattan, NY.</i>
           </p>
           <ImageWrapper>
             <Img
