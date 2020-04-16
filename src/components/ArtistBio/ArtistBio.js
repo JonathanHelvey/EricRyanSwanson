@@ -15,6 +15,7 @@ import {
   NewsHeadlineStyle,
   NewsDateStyle,
   NewsCard,
+  StyledParagraph,
 } from './ArtistBio.styled';
 import {
   Section1,
@@ -69,7 +70,7 @@ const ArtistBio = () => {
       <Grid container spacing={3}>
         <StyledGrid item xs={8}>
           <Header1 id="ArtistBio" Center>Artist Bio</Header1>
-          <p>
+          <StyledParagraph>
             I feel it is my job as an
             <strong> actor </strong>
             to discover a character’s soul and portray it externally with great ease and normality.
@@ -81,7 +82,7 @@ const ArtistBio = () => {
             <br />
             <br />
             <i>I was born and raised in Chicago, IL and currently reside in Manhattan, NY.</i>
-          </p>
+          </StyledParagraph>
           <ImageWrapper>
             <Img
               fixed={data.swanLogo.childImageSharp.fixed}
