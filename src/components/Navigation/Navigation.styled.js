@@ -9,7 +9,9 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
-  height: 110vh;
+  height: 100vh;
+  top: 0;
+  left: 0;
   width: 30vw;
   text-align: left;
   position: fixed;
@@ -59,6 +61,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  -webkit-backface-visibility: hidden;
 
   &:focus {
     outline: none;
