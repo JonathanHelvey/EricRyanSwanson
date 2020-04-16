@@ -10,14 +10,14 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
   height: 100vh;
-  top: 0;
-  left: 0;
+  /* top: 0;
+  left: 0; */
   width: 30vw;
   text-align: left;
   position: fixed;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-  z-index: 8;
+  z-index: 5;
 
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     width: 100vw;
