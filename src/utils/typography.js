@@ -5,10 +5,10 @@ kirkhamTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
   // h1: {
   //   fontFamily: ['Lobster'].join(','),
   // },
-  'h1, h2,h3': {
-    marginBottom: rhythm(1 / 2),
-    marginTop: rhythm(2),
-  },
+  // 'h1, h2,h3': {
+  //   marginBottom: rhythm(1 / 2),
+  //   marginTop: rhythm(2),
+  // },
 });
 
 const typography = new Typography(kirkhamTheme);
