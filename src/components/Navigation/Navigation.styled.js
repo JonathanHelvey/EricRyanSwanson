@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const NavigationWrapper = styled.div`
   width: 100vw;
-  height: auto:
-  top: 0;
-  left: 0;
+  height: auto;
 `;
 
 export const StyledMenu = styled.nav`
@@ -12,7 +10,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
-  height: 100vh;
+  height: 120vh;
   width: 30vw;
   text-align: left;
   position: fixed;
@@ -50,8 +48,8 @@ export const StyledMenu = styled.nav`
 
 export const StyledBurger = styled.button`
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 5%;
+  left: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,8 +69,6 @@ export const StyledBurger = styled.button`
   div {
     width: 2em;
     height: 0.25em;
-    top: 2.5em;
-    left: 1em;
     background: ${({ theme, open }) => (open ? theme.primaryLight : theme.primaryBlack)};
     border-radius: 10px;
     transition: all 0.3s linear;
@@ -98,6 +94,7 @@ export const StyledBurger = styled.button`
   }
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     top: 0;
+    left: 1em;
     margin-top: 4vh;
   }
 `;
