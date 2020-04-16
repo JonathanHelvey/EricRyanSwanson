@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const NavigationWrapper = styled.div`
   width: 100vw;
+  height: auto:
+  top: 0;
+  left: 0;
 `;
 
 export const StyledMenu = styled.nav`
@@ -10,14 +13,12 @@ export const StyledMenu = styled.nav`
   justify-content: center;
   background: ${({ theme }) => theme.primaryBlack};
   height: 100vh;
-  /* top: 0;
-  left: 0; */
   width: 30vw;
   text-align: left;
   position: fixed;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
-  z-index: 5;
+  z-index: 8;
 
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     width: 100vw;
@@ -49,13 +50,13 @@ export const StyledMenu = styled.nav`
 
 export const StyledBurger = styled.button`
   position: fixed;
-  top: 5%;
-  left: 1rem;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 2em;
+  height: 2em;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -68,8 +69,10 @@ export const StyledBurger = styled.button`
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
+    width: 2em;
+    height: 0.25em;
+    top: 2.5em;
+    left: 1em;
     background: ${({ theme, open }) => (open ? theme.primaryLight : theme.primaryBlack)};
     border-radius: 10px;
     transition: all 0.3s linear;

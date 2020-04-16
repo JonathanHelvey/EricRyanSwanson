@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     justify-content: center;
     margin-right: 0;
-  margin-top: 0;  
+    margin-top: 0;  
   };
 `;
 
