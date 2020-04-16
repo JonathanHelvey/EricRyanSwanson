@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
-import img from '../../data/images/eric-213.jpg';
+import img from '../../data/images/EricBanner2.jpg';
 
 export const FormWrapper = styled.div`
   form {
@@ -11,7 +11,7 @@ export const FormWrapper = styled.div`
 export const SectionHeader = styled.div`
   padding: 12vw;
   background-color: ${({ theme }) => theme.primaryLightDark};
-  /* background: url(${img}); */
+  background: url(${img});
   background-position: center;
   background-size: 150px;
   background-repeat: no-repeat;
