@@ -2,10 +2,10 @@ import Typography from 'typography';
 import kirkhamTheme from 'typography-theme-kirkham'; // If I want to add a theme to Typography Fonts.
 
 kirkhamTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
-  h1: {
-    fontFamily: ['Lobster'].join(','),
-  },
-  'h1, h2,h3': {
+  // h1: {
+  //   fontFamily: ['Lobster'].join(','),
+  // },
+  'h1, h2, h3': {
     marginBottom: rhythm(1 / 2),
     marginTop: rhythm(2),
   },
@@ -13,7 +13,7 @@ kirkhamTheme.overrideThemeStyles = ({ rhythm }, options, styles) => ({
 
 const typography = new Typography(kirkhamTheme);
 kirkhamTheme.baseFontSize = '24px'; // was 20px.
-kirkhamTheme.headerFontFamily = 'lobster';
+// kirkhamTheme.headerFontFamily = 'lobster';
 
 
 // const typography = new Typography({
