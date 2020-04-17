@@ -69,7 +69,10 @@ export const StyledSocialLogos = styled.div`
 `;
 
 export const StyledParagraph = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2em;
-  padding-left: 2em; 
+  padding-left: 2em;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    font-size: 16px 
+  }; 
 `;

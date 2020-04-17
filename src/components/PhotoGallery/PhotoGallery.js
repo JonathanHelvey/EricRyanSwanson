@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Grid from '@material-ui/core/Grid';
 import { Section1 } from '../../themes/theme';
-import { StyledGrid, StyledImg } from './PhotoGallery.styled';
+import { StyledImg } from './PhotoGallery.styled';
 
 const Photographs = () => {
   const data = useStaticQuery(graphql`
@@ -76,52 +76,52 @@ const Photographs = () => {
   return (
     <>
       <Section1>
-        <Grid container spacing={4}>
-          <StyledGrid item xs={4}>
+        <Grid container spacing={1}>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto0.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto1.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto2.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto3.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto4.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto5.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto6.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto7.childImageSharp.fluid}
             />
-          </StyledGrid>
-          <StyledGrid item xs={4}>
+          </Grid>
+          <Grid item xs={4} align="center">
             <StyledImg
               fluid={data.ericPhoto8.childImageSharp.fluid}
             />
-          </StyledGrid>
+          </Grid>
         </Grid>
       </Section1>
     </>
