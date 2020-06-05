@@ -20,5 +20,8 @@ open http://localhost:8080/
 open http://localhost:8000/___graphql
 ```
 
+### Author 
+Jonathan Helvey
+
 ### Demo
 
