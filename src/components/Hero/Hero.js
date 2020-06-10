@@ -1,9 +1,12 @@
 import React from 'react';
-import { HeroWrapper, SiteHeaderTitle } from './Hero.styled';
+import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, titleWrapper } from './Hero.styled';
 
 const Hero = () => (
   <HeroWrapper>
-    <SiteHeaderTitle>Eric Ryan Swanson</SiteHeaderTitle>
+    <titleWrapper>
+      <SiteHeaderTitle>Eric Ryan Swanson</SiteHeaderTitle>
+      <SubHeaderTitle>Theatre Artist & Film Actor</SubHeaderTitle>
+    </titleWrapper>
   </HeroWrapper>
 );
 

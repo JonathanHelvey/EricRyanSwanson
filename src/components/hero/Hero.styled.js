@@ -20,8 +20,15 @@ export const HeroWrapper = styled.div`
   };
 `;
 
+export const titleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const SiteHeaderTitle = styled.h1`
-  margin: 30px;
+  display: flex;
+  justify-content: flex-start;
   margin-top: 50vh;
   margin-left: 8vh;
   font-size: 5vh;
@@ -31,6 +38,23 @@ export const SiteHeaderTitle = styled.h1`
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     font-size: 2vh;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    display: none;
+  };
+`;
+
+export const SubHeaderTitle = styled.h2`
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: 2.5vh;
+  color: ${({ theme }) => theme.primaryLight};
+  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
+    font-size: 2vh;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    display: none;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
