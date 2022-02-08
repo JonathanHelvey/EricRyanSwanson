@@ -50,7 +50,7 @@ const Footer = () => {
       <CopyWrightDiv>
         {' '}
         <span aria-label="Copyright" role="img"> ©️ </span>
-        Copywright Eric Ryan Swanson 2020
+        Copywright Eric Ryan Swanson 2022
       </CopyWrightDiv>
     </SectionFooter>
   );
