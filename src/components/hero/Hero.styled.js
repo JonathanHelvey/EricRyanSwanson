@@ -12,7 +12,7 @@ export const HeroWrapper = styled.div`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 108.5vh;
+  height: auto;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     background-attachment:scroll
     background-image: url(${headshot});
