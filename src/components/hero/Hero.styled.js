@@ -1,36 +1,37 @@
 import styled from 'styled-components';
-import image from '../../data/images/Eric-164.jpg';
+import image from '../../data/images/wood-panel.jpeg';
+import headshot from '../../data/images/Eric-222.jpg';
 
 export const HeroWrapper = styled.div`
-  background: url(${image});
+  background-image: url(${image});
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   background-attachment: fixed;
-  margin-top: -10px;
-  background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100vh;
-  width: auto;
+  height: 108.5vh;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     background-attachment:scroll
+    background-image: url(${headshot});
+    height: auto;
   };
 `;
 
 export const titleWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 600px; */
 `;
 
 export const SiteHeaderTitle = styled.h1`
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
   margin-top: 50vh;
-  margin-left: 8vh;
+  margin-right: 40vh;
   font-size: 5vh;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
@@ -46,8 +47,8 @@ export const SiteHeaderTitle = styled.h1`
 
 export const SubHeaderTitle = styled.h2`
   display: flex;
-  justify-content: flex-end;
-  margin: 0;
+  justify-content: flex-start;
+  margin-left: 20vh;
   font-size: 2.5vh;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
