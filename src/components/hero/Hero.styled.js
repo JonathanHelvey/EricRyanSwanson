@@ -1,49 +1,85 @@
 import styled from 'styled-components';
-import image from '../../data/images/wood-panel.jpeg';
-import headshot from '../../data/images/Eric-222.jpg';
+import { Button } from '@material-ui/core';
+import image from '../../data/images/grey-gradiant.webp';
+import headshot from '../../data/images/eric-222.jpg';
 
 export const HeroWrapper = styled.div`
-  background-image: url(${image});
+  /* background-image: url(${image}); */
+  background: linear-gradient(87deg, rgba(43,46,51,1) 0%, rgba(29,33,36,1) 97%);
   display: flex;
   justify-content: center;
   background-attachment: fixed;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   height: auto;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    background-attachment:scroll
-    background-image: url(${headshot});
-    height: auto;
+    justify-content: flex-end;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    background-image: flex-end;
   };
 `;
 
-export const titleWrapper = styled.div`
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 600px; */
-`;
-
-export const SiteHeaderTitle = styled.h1`
-  /* display: flex;
-  justify-content: flex-start; */
-  margin-top: 50vh;
-  margin-right: 40vh;
-  font-size: 5vh;
-  color: ${({ theme }) => theme.primaryLight};
-  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
-    font-size: 3vh;
-  };
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    font-size: 2vh;
+export const SocialIconWrapper = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media (max-width: ${({ theme }) => theme.mobile.md}) {
+      display: none;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
   };
 `;
+
+export const MyButton = styled(Button)`
+  background-color: #333333;
+  color: #ffffff;
+  margin: 5px; 
+  /* @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    display: none;
+  }; */
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    display: none;
+  };
+`;
+
+// export const Headshot = styled.div` 
+//   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+//     display: none;
+//   };
+// `;
+
+export const MyImage = styled.img` 
+  height: 800px;
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    height: 600px;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    height: 600px;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    height: auto;
+  };
+`;
+
+export const SiteHeaderTitle = styled.h1`
+  margin-top: 30vh;
+  margin-right: 20vh;
+  font-size: 5vh;
+  color: ${({ theme }) => theme.primaryLight};
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    margin-top: 15vh;
+    margin-left: 20px
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    display: none;
+  };
+`;
+
 
 export const SubHeaderTitle = styled.h2`
   display: flex;
@@ -52,10 +88,10 @@ export const SubHeaderTitle = styled.h2`
   font-size: 2.5vh;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
-    font-size: 2vh;
+    font-size: none;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    display: none;
+    margin-left: 6vh;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;

@@ -8,7 +8,7 @@ import { StyledImg } from './PhotoGallery.styled';
 const Photographs = () => {
   const data = useStaticQuery(graphql`
   query {
-    ericPhoto0: file(relativePath: { eq: "Eric-222.jpg" }) {
+    ericPhoto0: file(relativePath: { eq: "eric-222.jpg" }) {
       childImageSharp {
         fluid (maxWidth: 300, maxHeight: 400) {
           ...GatsbyImageSharpFluid
