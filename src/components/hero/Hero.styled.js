@@ -4,8 +4,8 @@ import image from '../../data/images/grey-gradiant.webp';
 import headshot from '../../data/images/eric-222.jpg';
 
 export const HeroWrapper = styled.div`
-  background-image: url(${image});
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(45,49,52,1) 35%, rgba(0,212,255,1) 100%);
+  /* background-image: url(${image}); */
+  background: linear-gradient(87deg, rgba(43,46,51,1) 0%, rgba(29,33,36,1) 97%);
   display: flex;
   justify-content: center;
   background-attachment: fixed;
