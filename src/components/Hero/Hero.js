@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, SocialIconWrapper, Headshot, MyImage } from './Hero.styled';
+import { Header1 } from '../../themes/theme'
+import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, SocialIconWrapper, Headshot, MyImage, SubHeaderTitle2 } from './Hero.styled';
 import image from '../../data/images/eric-222.jpg';
 import SocialMediaIcons from '../SocialMediaIcons';
 
@@ -18,6 +19,7 @@ const Hero = () => (
     </div>
     <div>
       <MyImage src={image} alt="Eric Ryan Swans Headshot" />
+      <SubHeaderTitle2>Eric Ryan Swanson</SubHeaderTitle2>
     </div>
   </HeroWrapper>
 );

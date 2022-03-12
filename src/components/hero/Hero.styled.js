@@ -7,6 +7,8 @@ export const HeroWrapper = styled.div`
   /* background-image: url(${image}); */
   background: linear-gradient(166deg, rgba(47,51,54,1) 38%, rgba(10,28,26,1) 59%);
   display: flex;
+  margin: 0;
+  padding: 0;
   justify-content: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -17,7 +19,7 @@ export const HeroWrapper = styled.div`
   height: 84vh;
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     /* justify-content: flex-end; */
-    height: 90vh;
+    height: 78vh;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     /* justify-content: flex-end; */
@@ -60,14 +62,14 @@ export const MyButton = styled(Button)`
 
 export const MyImage = styled.img` 
   height: 800px;
-  width: auto;
+  /* width: auto; */
   margin-top:20px;
-  margin-bottom: 10px;
+  margin-bottom: -50px;
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     height: 600px;
     margin-top:10px;
   };
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     height: 400px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
@@ -110,5 +112,15 @@ export const SubHeaderTitle = styled.h2`
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
+  };
+`;
+
+export const SubHeaderTitle2 = styled.h2`
+  display:none; 
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vh;
+  color: ${({ theme }) => theme.primaryLight};
   };
 `;
