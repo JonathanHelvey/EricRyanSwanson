@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const SectionFooter = styled.div`
   height: 50vh;
-  margin-bottom: -10vh;
+  margin: -10;
+  padding: 0;
   background-color: ${({ theme }) => theme.primaryDark};
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
-    height: auto; 
+    height: 50vh; 
   };
 `;
 
@@ -18,6 +19,11 @@ export const Wrapper = styled.div`
     justify-content: center;
     margin-right: 0;
     margin-top: 0;  
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.xs}) {
+    justify-content: center;
+    margin-right: 0;
+    margin-top:50px;  
   };
 `;
 
