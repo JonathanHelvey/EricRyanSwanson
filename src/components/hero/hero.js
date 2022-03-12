@@ -16,7 +16,7 @@ const Hero = () => (
         <SocialMediaIcons />
       </SocialIconWrapper>
     </div>
-    <div style="height: 200px;">
+    <div>
       <MyImage src={image} alt="Eric Ryan Swans Headshot" />
     </div>
   </HeroWrapper>

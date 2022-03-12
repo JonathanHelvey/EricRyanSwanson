@@ -43,11 +43,14 @@ export const SocialIconWrapper = styled.div`
 export const MyButton = styled(Button)`
   background-color: #333333;
   color: #ffffff;
-  margin: 5px; 
+  margin: 5px 40px 0 0;
   /* @media (max-width: ${({ theme }) => theme.mobile.md}) {
     display: none;
   }; */
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    margin-right: 40px
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
     margin-right: 40px
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
@@ -61,11 +64,11 @@ export const MyImage = styled.img`
   margin-top:20px;
   margin-bottom: 10px;
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
-    height: 500px;
-    margin-top:1px;
+    height: 600px;
+    margin-top:10px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    height: 300px;
+    height: 400px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: auto;
