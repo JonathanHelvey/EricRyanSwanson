@@ -5,7 +5,7 @@ import headshot from '../../data/images/eric-222.jpg';
 
 export const HeroWrapper = styled.div`
   /* background-image: url(${image}); */
-  background: linear-gradient(87deg, rgba(43,46,51,1) 0%, rgba(29,33,36,1) 97%);
+  background: linear-gradient(166deg, rgba(47,51,54,1) 38%, rgba(10,28,26,1) 59%);
   display: flex;
   justify-content: center;
   background-attachment: fixed;
