@@ -14,9 +14,14 @@ export const HeroWrapper = styled.div`
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: auto;
+  height: 84vh;
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    /* justify-content: flex-end; */
+    height: 90vh;
+  };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    /* height: 45vh; */
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     background-image: flex-end;
@@ -42,24 +47,25 @@ export const MyButton = styled(Button)`
   /* @media (max-width: ${({ theme }) => theme.mobile.md}) {
     display: none;
   }; */
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    margin-right: 40px
+  };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
   };
 `;
 
-// export const Headshot = styled.div` 
-//   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
-//     display: none;
-//   };
-// `;
-
 export const MyImage = styled.img` 
   height: 800px;
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    height: 600px;
+  width: auto;
+  margin-top:20px;
+  margin-bottom: 10px;
+  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
+    height: 500px;
+    margin-top:1px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    height: 600px;
+    height: 300px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: auto;
@@ -71,9 +77,12 @@ export const SiteHeaderTitle = styled.h1`
   margin-right: 20vh;
   font-size: 5vh;
   color: ${({ theme }) => theme.primaryLight};
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    margin-right: 40px
+  };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    margin-top: 15vh;
-    margin-left: 20px
+    margin-top: 10vh;
+    margin-left: 10px
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
@@ -89,6 +98,9 @@ export const SubHeaderTitle = styled.h2`
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     font-size: none;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    margin-right: 40px
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     margin-left: 6vh;
