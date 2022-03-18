@@ -15,8 +15,8 @@ export const theme = createMuiTheme({
     xs: '576px',
     sm: '766px',
     md: '1020px',
-    lg: '1500px',
-    xl: '1700px',
+    lg: '1600px',
+    xl: '1800px',
   },
 });
 
@@ -45,7 +45,7 @@ export const SectionHeader = styled.div`
   padding: 4vw;
   padding-right: 15vw;
   padding-left: 15vw;
-  height: 60vh;
+  height: 40vh;
   width: auto;
   background-color: ${(props) => (props.Primary && theme.primaryLightDark)};
   background-color: ${(props) => (props.Secondary && theme.primaryGreen)};

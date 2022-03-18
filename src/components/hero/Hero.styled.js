@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import { Button } from '@material-ui/core';
-import image from '../../data/images/grey-gradiant.webp';
-import headshot from '../../data/images/eric-222.jpg';
 
 export const HeroWrapper = styled.div`
-  /* background-image: url(${image}); */
   background: linear-gradient(166deg, rgba(47,51,54,1) 38%, rgba(10,28,26,1) 59%);
   display: flex;
   margin: 0;
@@ -18,12 +15,7 @@ export const HeroWrapper = styled.div`
   -o-background-size: cover;
   height: 84vh;
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    /* justify-content: flex-end; */
     height: 78vh;
-  };
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    /* justify-content: flex-end; */
-    /* height: 45vh; */
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     background-image: flex-end;
@@ -46,9 +38,6 @@ export const MyButton = styled(Button)`
   background-color: #333333;
   color: #ffffff;
   margin: 5px 40px 0 0;
-  /* @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    display: none;
-  }; */
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     margin-right: 40px
   };
@@ -61,11 +50,11 @@ export const MyButton = styled(Button)`
 `;
 
 export const MyImage = styled.img` 
-  height: 700px;
+  height: 660px;
   margin-top:15%;
   margin-bottom: -50px;
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
-    height: 600px;
+    height: 560px;
     margin-top:10%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {

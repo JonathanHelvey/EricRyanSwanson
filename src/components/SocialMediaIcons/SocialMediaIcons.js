@@ -5,17 +5,7 @@ import { StyledSocialLogoImage, StyledLogoWrapper } from './SocialMediaIcons.sty
 const SocialMediaIcons = () => (
   <StyledLogoWrapper>
     <a
-      href="https://www.linkedin.com/in/jonathanhelvey/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <StyledSocialLogoImage
-        src={require('../../data/social-icons/linkedin-logo.png')}
-        alt="social-sites"
-      />
-    </a>
-    <a
-      href="https://facebook.com"
+      href="https://www.facebook.com/eric.r.swanson.3"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -25,7 +15,7 @@ const SocialMediaIcons = () => (
       />
     </a>
     <a
-      href="https://twitter.com/JonathanHelvey"
+      href="https://twitter.com/ericryanswan"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -35,7 +25,7 @@ const SocialMediaIcons = () => (
       />
     </a>
     <a
-      href="https://www.imdb.com/name/nm4805518/"
+      href="https://www.imdb.com/name/nm4805518/?ref_=fn_al_nm_1"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -45,7 +35,7 @@ const SocialMediaIcons = () => (
       />
     </a>
     <a
-      href="https://www.imdb.com/name/nm4805518/"
+      href="https://www.instagram.com/ericryanswan/"
       target="_blank"
       rel="noopener noreferrer"
     >
