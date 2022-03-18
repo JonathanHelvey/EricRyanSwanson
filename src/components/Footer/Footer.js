@@ -10,9 +10,9 @@ const Links = [
   <Link to="/#">Home</Link>,
   <Link to="/photographs">HeadShots & Photos</Link>,
   <Link to="/demo-reel">Demo-Reel</Link>,
-  <Link to="/">Resume</Link>,
+  <Link to="/resume">Resume</Link>,
   <Link to="/reviews">Reviews</Link>,
-  <Link to="/">Contact</Link>,
+  <Link to="/contact">Contact</Link>,
 ];
 
 const Footer = () => {
