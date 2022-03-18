@@ -8,8 +8,8 @@ import { SectionFooter, Wrapper, SiteTitle, CopyWrightDiv } from './Footer.style
 
 const Links = [
   <Link to="/#">Home</Link>,
-  <Link to="/#ArtistBio">Artist Bio</Link>,
-  <Link to="/photographs">Photographs</Link>,
+  <Link to="/photographs">HeadShots & Photos</Link>,
+  <Link to="/demo-reel">Demo-Reel</Link>,
   <Link to="/">Resume</Link>,
   <Link to="/reviews">Reviews</Link>,
   <Link to="/">Contact</Link>,

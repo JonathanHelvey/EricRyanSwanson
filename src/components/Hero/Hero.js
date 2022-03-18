@@ -1,7 +1,6 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
-import { Header1 } from '../../themes/theme'
-import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, SocialIconWrapper, Headshot, MyImage, SubHeaderTitle2 } from './Hero.styled';
+import { navigate } from 'gatsby';
+import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, SocialIconWrapper, MyImage, PhoneHeaderTitle, PhoneHeaderTitleWrapper } from './Hero.styled';
 import image from '../../data/images/eric-222.jpg';
 import SocialMediaIcons from '../SocialMediaIcons';
 
@@ -10,17 +9,17 @@ const Hero = () => (
     <div>
       <SiteHeaderTitle>Eric Ryan Swanson</SiteHeaderTitle>
       <SubHeaderTitle>Theatre Artist & Film Actor</SubHeaderTitle>
-      <MyButton variant="outlined" size="large">Resume</MyButton>
-      <MyButton variant="outlined" size="large">Demo Reel</MyButton>
-      <MyButton variant="outlined" size="large">HeadShots</MyButton>
+      <MyButton onClick={() => { navigate('/resume'); }} variant="outlined" size="large">Resume</MyButton>
+      <MyButton onClick={() => { navigate('/demo-reel'); }} variant="outlined" size="large">Demo Reel</MyButton>
+      <MyButton onClick={() => { navigate('/photographs'); }} variant="outlined" size="large">HeadShots</MyButton>
       <SocialIconWrapper>
         <SocialMediaIcons />
       </SocialIconWrapper>
     </div>
-    <div>
+    <PhoneHeaderTitleWrapper>
       <MyImage src={image} alt="Eric Ryan Swans Headshot" />
-      <SubHeaderTitle2>Eric Ryan Swanson</SubHeaderTitle2>
-    </div>
+      <PhoneHeaderTitle>Eric Ryan Swanson</PhoneHeaderTitle>
+    </PhoneHeaderTitleWrapper>
   </HeroWrapper>
 );
 
