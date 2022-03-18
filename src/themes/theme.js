@@ -12,7 +12,7 @@ export const theme = createMuiTheme({
   primaryGreen: '#819C8D',
   primaryHover: '#CCAD8E',
   mobile: {
-    xs: '576px',
+    xs: '540px',
     sm: '766px',
     md: '1020px',
     lg: '1600px',

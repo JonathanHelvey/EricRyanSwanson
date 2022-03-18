@@ -14,8 +14,11 @@ export const HeroWrapper = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   height: 84vh;
-  @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    height: 78vh;
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    height: 50vh;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    height: 50%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     background-image: flex-end;
@@ -42,7 +45,8 @@ export const MyButton = styled(Button)`
     margin-right: 40px
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    margin-right: 40px
+    margin-right: 20px;
+    margin-bottom: 10px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
@@ -52,13 +56,13 @@ export const MyButton = styled(Button)`
 export const MyImage = styled.img` 
   height: 660px;
   margin-top:15%;
-  margin-bottom: -50px;
+  /* margin-bottom: -50px; */
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     height: 560px;
     margin-top:10%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    height: 500px;
+    height: 460px;
     margin-top:5%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
@@ -67,8 +71,9 @@ export const MyImage = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: 200px;
   };
-  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+  @media (max-width: ${({ theme }) => theme.mobile.xs}) {
     height: auto;
+    margin-bottom: -50px;
   };
 `;
 
@@ -82,7 +87,8 @@ export const SiteHeaderTitle = styled.h1`
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     margin-top: 10vh;
-    margin-left: 10px
+    margin-left: 10vw;
+    padding-bottom:10px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     display: none;
@@ -121,5 +127,5 @@ export const PhoneHeaderTitle = styled.h2`
 `;
 
 export const PhoneHeaderTitleWrapper = styled.div`
-  margin: 1vh;
+  margin: .5vh;
 `;

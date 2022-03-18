@@ -5,8 +5,8 @@ export const SectionFooter = styled.div`
   margin: -10;
   padding: 0;
   background-color: ${({ theme }) => theme.primaryDark};
-  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
-    height: 50vh; 
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
+    height: 100vh; 
   };
 `;
 
