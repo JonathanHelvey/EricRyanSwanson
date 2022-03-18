@@ -15,8 +15,8 @@ export const theme = createMuiTheme({
     xs: '576px',
     sm: '766px',
     md: '1020px',
-    lg: '1200px',
-    xl: '1500px',
+    lg: '1500px',
+    xl: '1700px',
   },
 });
 

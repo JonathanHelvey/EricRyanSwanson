@@ -61,16 +61,22 @@ export const MyButton = styled(Button)`
 `;
 
 export const MyImage = styled.img` 
-  height: 800px;
-  /* width: auto; */
-  margin-top:20px;
+  height: 700px;
+  margin-top:15%;
   margin-bottom: -50px;
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     height: 600px;
-    margin-top:10px;
+    margin-top:10%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
+    height: 500px;
+    margin-top:5%;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.md}) {
     height: 400px;
+  };
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    height: 200px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: auto;
@@ -115,7 +121,7 @@ export const SubHeaderTitle = styled.h2`
   };
 `;
 
-export const SubHeaderTitle2 = styled.h2`
+export const PhoneHeaderTitle = styled.h2`
   display:none; 
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
   display: flex;
@@ -123,4 +129,8 @@ export const SubHeaderTitle2 = styled.h2`
   font-size: 2.5vh;
   color: ${({ theme }) => theme.primaryLight};
   };
+`;
+
+export const PhoneHeaderTitleWrapper = styled.div`
+  margin: 1vh;
 `;
