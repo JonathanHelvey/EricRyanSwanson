@@ -4,15 +4,9 @@ import { Button } from '@material-ui/core';
 export const HeroWrapper = styled.div`
   background: linear-gradient(166deg, rgba(47,51,54,1) 38%, rgba(10,28,26,1) 59%);
   display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 84vh;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     height: 50vh;
@@ -38,9 +32,9 @@ export const SocialIconWrapper = styled.div`
 `;
 
 export const MyButton = styled(Button)`
-  background-color: #333333;
+  background-color: #FF9900;
   color: #ffffff;
-  margin: 5px 40px 0 0;
+  margin: 60px 40px 0 0;
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     margin-right: 40px
   };
@@ -53,20 +47,25 @@ export const MyButton = styled(Button)`
   };
 `;
 
+export const MyImageContainer = styled.div` 
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+`;
+
 export const MyImage = styled.img` 
-  height: 660px;
-  margin-top:15%;
-  /* margin-bottom: -50px; */
-  @media (max-width: ${({ theme }) => theme.mobile.xl}) {
+  height: 700px;
+  margin-top:3%;
+  /* @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     height: 560px;
     margin-top:10%;
-  };
+  }; */
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    height: 460px;
+    height: 560px;
     margin-top:5%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    height: 400px;
+    height: 340px;
   };
   @media (max-width: ${({ theme }) => theme.mobile.sm}) {
     height: 200px;
