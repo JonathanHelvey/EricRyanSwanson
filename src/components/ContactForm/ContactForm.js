@@ -8,7 +8,7 @@ import { FormWrapper, TextFieldStyle } from './ContactForm.styled';
 const ContactForm = () => (
   <>
     <SectionHeader Secondary>
-      <Header1 Right lg>Reviews</Header1>
+      <Header1 Right lg>Get in Touch!</Header1>
     </SectionHeader>
     <Section1>
       <Header2 Center md>Lets Work Together!</Header2>
