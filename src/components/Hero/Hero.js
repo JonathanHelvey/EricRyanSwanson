@@ -1,12 +1,12 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, MyImageContainer, MyImage, PhoneHeaderTitle, PhoneHeaderTitleWrapper } from './Hero.styled';
+import { HeroWrapper, SiteHeaderTitle, SubHeaderTitle, MyButton, Container, MyImage, PhoneHeaderTitle, PhoneHeaderTitleWrapper } from './Hero.styled';
 import image from '../../data/images/eric-222.jpg';
 
 
 const Hero = () => (
   <HeroWrapper>
-    <MyImageContainer>
+    <Container>
       <div>
         <SiteHeaderTitle>Eric Ryan Swanson</SiteHeaderTitle>
         <SubHeaderTitle>Theatre Artist & Film Actor</SubHeaderTitle>
@@ -18,7 +18,7 @@ const Hero = () => (
         <MyImage src={image} alt="Eric Ryan Swans Headshot" />
         <PhoneHeaderTitle>Eric Ryan Swanson</PhoneHeaderTitle>
       </PhoneHeaderTitleWrapper>
-    </MyImageContainer>
+    </Container>
   </HeroWrapper>
 );
 
