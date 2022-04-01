@@ -47,7 +47,7 @@ export const MyButton = styled(Button)`
   };
 `;
 
-export const MyImageContainer = styled.div` 
+export const Container = styled.div` 
   display: flex;
   justify-content: center;
   /* height: 100vh; */
@@ -80,6 +80,7 @@ export const SiteHeaderTitle = styled.h1`
   margin-top: 30vh;
   margin-right: 20vh;
   font-size: 5vh;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
     margin-right: 40px
@@ -100,6 +101,7 @@ export const SubHeaderTitle = styled.h2`
   justify-content: flex-start;
   margin-left: 20vh;
   font-size: 2.5vh;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.primaryLight};
   @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     font-size: none;
