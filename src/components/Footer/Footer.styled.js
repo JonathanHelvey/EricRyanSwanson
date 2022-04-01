@@ -5,8 +5,8 @@ export const SectionFooter = styled.div`
   margin: -10;
   padding: 0;
   background-color: ${({ theme }) => theme.primaryDark};
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    height: 100vh; 
+  @media (max-width: ${({ theme }) => theme.mobile.sm}) {
+    height: auto; 
   };
 `;
 
@@ -29,14 +29,11 @@ export const Wrapper = styled.div`
 
 export const SiteTitle = styled.div`
   color: ${({ theme }) => theme.primaryLight};
-  margin-left: 10vw;
-  font-size: 10px; 
+  /* margin-left: 10vw; */
+  font-size: 12px; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  @media (max-width: ${({ theme }) => theme.mobile.md}) {
-    display: none; 
-  };
+  /* justify-content: flex-start; */
 `;
 
 export const CopyWrightDiv = styled.div`

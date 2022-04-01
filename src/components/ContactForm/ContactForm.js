@@ -2,13 +2,13 @@ import React from 'react';
 
 import Button from '@material-ui/core/Button';
 
-import { Section1, Header2 } from '../../themes/theme';
-import { FormWrapper, SectionHeader, TextFieldStyle, ContactHeader } from './ContactForm.styled';
+import { Section1, Header2, SectionHeader, Header1 } from '../../themes/theme';
+import { FormWrapper, TextFieldStyle } from './ContactForm.styled';
 
 const ContactForm = () => (
   <>
-    <SectionHeader>
-      <ContactHeader Right>Get In Touch!</ContactHeader>
+    <SectionHeader Secondary>
+      <Header1 Right lg>Reviews</Header1>
     </SectionHeader>
     <Section1>
       <Header2 Center md>Lets Work Together!</Header2>
