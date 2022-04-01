@@ -2,8 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Grid from '@material-ui/core/Grid';
-import { Section1 } from '../../themes/theme';
-import { StyledImg } from './PhotoGallery.styled';
+import { StyledImg, PhotoSection1 } from './PhotoGallery.styled';
 
 const Photographs = () => {
   const data = useStaticQuery(graphql`
@@ -75,7 +74,7 @@ const Photographs = () => {
 `);
   return (
     <>
-      <Section1>
+      <PhotoSection1>
         <Grid container spacing={1}>
           <Grid item xs={4} align="center">
             <StyledImg
@@ -123,7 +122,7 @@ const Photographs = () => {
             />
           </Grid>
         </Grid>
-      </Section1>
+      </PhotoSection1>
     </>
   );
 };
