@@ -27,33 +27,35 @@ const PaperReviews = () => {
 `);
   return (
     <>
-      <SectionHeader Primary>
+      <SectionHeader Secondary>
         <Header1 Right lg>Reviews</Header1>
       </SectionHeader>
-      <Section1 Right>
-        <Grid container spacing={1}>
-          <StyledGrid item xs={12}>
-            {data.reviews.nodes.map((review, idx) => (
-              <ul key={`REVIEW${idx}`}>
-                <Header2 Left md>{review.title}</Header2>
-                <p style={{ fontSize: '25px', fontStyle: 'italic', marginTop: '4vh' }}>
-                  <img
-                    src={require('../../data/images/quote-marks.png')}
-                    alt="quotes"
-                    style={{ width: '20px', height: '20px', transform: 'rotate(180deg)' }}
-                  />
-                  {review.body}
-                  <img
-                    src={require('../../data/images/quote-marks.png')}
-                    alt="quotes"
-                    style={{ width: '20px', height: '20px' }}
-                  />
-                </p>
-                <hr />
-              </ul>
-            ))}
-          </StyledGrid>
-        </Grid>
+      <Section1 Primary="primaryLightDark">
+        <Section1 style={{ padding: '1vh 8vw 1vh 8vw' }}>
+          <Grid container spacing={1}>
+            <StyledGrid item xs={12}>
+              {data.reviews.nodes.map((review, idx) => (
+                <ul key={`REVIEW${idx}`}>
+                  <Header2 Left md>{review.title}</Header2>
+                  <p style={{ fontSize: '25px', fontStyle: 'italic', marginTop: '2vh', textAlign: 'center' }}>
+                    <img
+                      src={require('../../data/images/quote-marks.png')}
+                      alt="quotes"
+                      style={{ width: '20px', height: '20px', transform: 'rotate(180deg)' }}
+                    />
+                    {review.body}
+                    <img
+                      src={require('../../data/images/quote-marks.png')}
+                      alt="quotes"
+                      style={{ width: '20px', height: '20px' }}
+                    />
+                  </p>
+                  <hr />
+                </ul>
+              ))}
+            </StyledGrid>
+          </Grid>
+        </Section1>
       </Section1>
     </>
   );
