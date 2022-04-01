@@ -54,15 +54,15 @@ export const Container = styled.div`
 `;
 
 export const MyImage = styled.img` 
-  height: 700px;
+  height: 740px;
   margin-top:3%;
   /* @media (max-width: ${({ theme }) => theme.mobile.xl}) {
     height: 560px;
     margin-top:10%;
   }; */
   @media (max-width: ${({ theme }) => theme.mobile.lg}) {
-    height: 560px;
-    margin-top:5%;
+    height: 640px;
+    margin-top:10%;
   };
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     height: 340px;
