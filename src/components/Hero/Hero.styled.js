@@ -7,7 +7,7 @@ export const HeroWrapper = styled.div`
   justify-content: center;
   margin: 0;
   padding: 0;
-  height: 84vh;
+  height: 95vh;
   @media (max-width: ${({ theme }) => theme.mobile.md}) {
     height: 50vh;
   };
