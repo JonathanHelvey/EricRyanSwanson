@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import ericrResume from '../../data/assets/EricResume.pdf';
+import ericrResume from '../../data/assets/EricResumeNew.pdf';
 
 import { Header1, SectionHeader } from '../../themes/theme';
 import { ResumeWrapper, ButtonWrapper } from './ResumeFile.styled';
@@ -13,7 +13,7 @@ const ResumeFile = () => (
           <Header1 Right lg>Resume</Header1>
         </div>
         <Button variant="outlined" component="span" type="button" className="resume-button">
-          <a href={require('../../data/assets/EricResume.pdf')} download>
+          <a href={require('../../data/assets/EricResumeNew.pdf')} download>
             Download Resume PDF
           </a>
         </Button>
